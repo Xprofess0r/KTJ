@@ -1,0 +1,41 @@
+.backbtn{
+    width: 4rem;
+    height: 3rem;
+    background-color: white;
+    margin-top: 88vh;
+    margin-left: 5rem;
+
+    font-size: 1.55rem;
+    background: transparent;
+    color: white;
+    border: 3px solid;
+    display: flex;
+    font-family: "Neuekabel";
+    border-image: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        white,
+        white,
+        white,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        white,
+        white,
+        white,
+        transparent
+      )
+      1;
+    padding: 5px 18px 6px 18px;
+    width: max-content;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    outline: none;
+    width: max-content;
+
+
+}

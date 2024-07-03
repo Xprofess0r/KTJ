@@ -1,0 +1,9 @@
+.Table {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #f5f4f4;
+    box-shadow: -10px -10px 15px white, 15px 15px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    margin-top: 0.5rem;
+  }
+  

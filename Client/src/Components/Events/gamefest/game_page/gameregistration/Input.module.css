@@ -1,0 +1,159 @@
+.box {
+  font-family: "Exo", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.box2 {
+  margin-left: 105px;
+  margin-top: 10px;
+  font-family: "Exo", sans-serif;
+  display: flex;
+  position: relative;
+}
+.uldiv {
+  font-family: "Exo", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uldiv > li {
+  margin-bottom: 2vh;
+}
+
+.addMember {
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+}
+
+.ktjIDLabel {
+  font-family: "Exo", sans-serif;
+  margin-right: 1vw;
+  font-size: 0.8rem;
+  width: 6rem;
+  text-align: center;
+  display: inline-block;
+}
+
+/* .nameLabel {
+  margin-left: 15px;
+  margin-right: 15px;
+} */
+
+.verifyButton {
+  font-family: "Exo", sans-serif;
+  font-size: 0.69rem;
+  background-color: transparent;
+  width: 4vw;
+  margin: 0 auto;
+  border: 2px solid;
+  border-image: conic-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      white,
+      white,
+      white,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      white,
+      white,
+      white,
+      transparent
+    )
+    1;
+  cursor: pointer;
+}
+
+.verifyButtonInner {
+  background: linear-gradient(
+    to bottom right,
+    rgb(103, 107, 124),
+    rgb(37, 45, 58)
+  );
+  text-align: center;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteButton {
+  font-family: "Exo", sans-serif;
+  width: 2vw;
+  /* border-radius: 1.3em; */
+  margin-left: 0;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: -2vw;
+}
+
+.ktjIDField,
+.nameField {
+  font-family: "Exo", sans-serif;
+  background-color: rgb(255, 255, 255, 0);
+  color: white;
+  border: none;
+  line-height: 1.2rem;
+  /* width: 40%; */
+  border: none !important;
+  border-bottom: 2px solid white !important;
+  /* width: 11vw; */
+  font-size: 0.8rem;
+  text-align: center;
+  margin-right: 1vw;
+  width: 7rem;
+}
+.ktjIDField::placeholder {
+  color: #aaa;
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  /* width: fit-content; */
+}
+.verifyButtonOuter {
+  width: 7rem;
+  margin-right: 1vw;
+}
+@media only screen and (max-width: 425px) {
+  .box {
+    justify-content: space-around;
+  }
+  .ktjIDLabel {
+    margin-right: 2vw;
+    font-size: 0.7rem;
+    width: 30%;
+  }
+  .ktjIDField {
+    font-size: 0.7rem;
+  }
+  .addMember {
+    font-size: 0.8rem;
+  }
+  .ktjIDField,
+  .verifyButtonOuter {
+    width: 30%;
+  }
+  .verifyButton {
+    width: 15vw;
+  }
+  .deleteButton {
+    width: 6vw;
+    right: -6vw;
+  }
+  .uldiv > li {
+    width: 100%;
+  }
+  /* div for alert's font size should also change */
+}

@@ -1,0 +1,44 @@
+.aboutUs {
+  font-size: 29rem;
+  font-weight: bold;
+  color: #c4b9e2;
+}
+.left_content {
+  position: absolute;
+  box-sizing: border-box;
+  width: 75%;
+  align-items: center;
+  padding: 10rem 5rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 5rem;
+}
+.left_content_firstDiv {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.left_content_firstDiv > div {
+  display: inline-block;
+}
+.left_content img {
+  width: 200%;
+  height: 200%;
+}
+.Video2 {
+  width: 12em;
+  height: 12em;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+.Video2 video {
+  position: absolute;
+  top: -15%;
+  left: -50%;
+  width: 200%;
+  height: 130%;
+  padding: 0;
+  margin: 0;
+}

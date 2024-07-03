@@ -1,0 +1,320 @@
+.Schedule {
+  background-image: linear-gradient(to bottom, #211b58, #332d62);
+}
+.Schedule_Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-5%);
+  justify-content: space-evenly;
+  padding-top: 9rem;
+}
+.Schedule_Heading {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 6rem;
+  color: #b8b1d8;
+}
+/*
+.Schedule_TitleImage {
+   transform: translateY(-30%); 
+}
+*/
+.Schedule_TitleImage img {
+  width: 30rem;
+  height: 10rem;
+  margin-bottom: 3rem;
+  object-fit: cover;
+}
+
+.Schedule_Divider {
+  height: 10rem;
+  width: 100%;
+  /* transform: translateY(-140%); */
+  background-color: #b8b1d8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Schedule_Divider img {
+  width: 8rem;
+}
+.Schedule_DateTry {
+  display: flex;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  margin-bottom: 2rem;
+  /* transform: translateY(-160%); */
+}
+
+.Schedule_DateTry_DateTab {
+  padding: 0.5rem;
+  transition: 0.5s ease-in-out;
+  color: #b8b1d8;
+  backface-visibility: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), -5px -5px 5px #1f176283;
+  border-radius: 15px;
+  margin: 0 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  border: 2px solid #b8b1d8;
+}
+.Schedule_DateTry:hover .Schedule_DateTry_DateTab:hover {
+  background-color: #474444;
+  border: none;
+}
+.Schedule_CardsContainer {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  /* margin-bottom: 2rem; */
+  /* transform: translateY(-20%); */
+}
+.Schedule_CardsContainer_left {
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  box-sizing: border-box;
+  /* justify-content: end; */
+  display: flex;
+  overflow-y: scroll;
+}
+.Schedule_CardsContainer_left::-webkit-scrollbar {
+  width: 20px;
+}
+.Schedule_CardsContainer_left::-webkit-scrollbar-track :horizontal {
+  visibility: hidden;
+  border: none;
+}
+.Schedule_CardsContainer_left::-webkit-scrollbar-track-piece:vertical {
+  border: 2px solid rgb(127, 192, 235);
+  border-radius: 10px;
+}
+.Schedule_CardsContainer_left::-webkit-scrollbar-thumb {
+  background-color: rgb(127, 192, 235);
+  border-radius: 10px;
+}
+.Schedule_CardsContainer_left::-webkit-scrollbar-corner {
+  visibility: hidden;
+}
+.Schedule_MainTataProjectCardCnt {
+  width: 40%;
+  color: #b8b1d8;
+  padding: 1rem;
+  height: 80vh;
+  box-sizing: border-box;
+}
+.Schedule_majorCard {
+  display: flex;
+  margin: 0rem auto;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  padding: 1rem 2rem;
+  background-color: #5a5196;
+  border-radius: 20px;
+  justify-content: center;
+  width: 50%;
+}
+.Schedule_MainTataProjectCard img {
+  width: 90%;
+  height: 40%;
+}
+.Schedule_majorCardImageCnt {
+  width: 12rem;
+  height: 12rem;
+}
+.Schedule_majorCardImageCnt img {
+  width: 105%;
+  height: 110%;
+}
+.majorCardDate {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.HowToUseAirmeet {
+  padding: 1rem;
+  text-align: center;
+  color: #b8b1d8;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  /* background-image: linear-gradient(to bottom, #211b58, #332d62); */
+  background-color: #5a5196d8;
+}
+
+.HowToUseAirmeet a {
+  text-decoration: none;
+  color: #b8b1d8;
+}
+.majorCardTime {
+  margin-bottom: 0.4rem;
+}
+
+.joinbtn {
+  text-decoration: none;
+  display: block;
+  width: 4.5rem;
+  margin-top: 1rem;
+  padding: 0.7rem 1.8rem;
+  background-color: #f9828a;
+  color: #381e65;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-weight: 500;
+  margin-left: auto;
+}
+.presented {
+  color: #b8b1d8;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.imagecnt {
+  width: 7.5rem;
+  height: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .Schedule_MainTataProjectCardCnt,
+  .Schedule_CardsContainer_left {
+    width: 100%;
+    height: auto;
+  }
+
+  .Schedule_CardsContainer {
+    flex-direction: column;
+    /* transform: translateY(-15%); */
+  }
+
+  .Schedule_majorCard {
+    width: 90%;
+    flex-direction: row;
+    margin: 1rem auto;
+  }
+  .Schedule_MainTataProjectCard img {
+    width: 90%;
+    height: 40%;
+  }
+
+  .Schedule_DateTry {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    backface-visibility: hidden;
+    /* transform: translateY(-300%); */
+  }
+
+  .Schedule_DateTry_DateTab {
+    padding: 0.5rem;
+    color: #b8b1d8;
+    backface-visibility: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), -5px -5px 5px #1f176283;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin: 0rem 1rem;
+    font-weight: bold;
+    border: 2px solid #b8b1d8;
+  }
+  .Schedule_DateTry:hover .Schedule_DateTry_DateTab:hover {
+    background-color: #474444;
+    font-size: 2.2rem;
+    border: none;
+  }
+  .Schedule_Heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #b8b1d8;
+  }
+  .Schedule_Divider {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .Schedule_Divider img {
+    width: 2.5rem;
+    height: 1.5rem;
+    padding: 1rem 1rem;
+  }
+}
+.workshops {
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.workshops_row {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: #5a5196;
+  color: #b8b1d8;
+  text-align: center;
+  width: 20%;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-left: 6rem;
+  margin-right: 2rem;
+}
+.workshops_images {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  background-color: #5a5196;
+  border-radius: 1rem;
+}
+.workshops_image {
+  padding: 2rem 0;
+}
+.workshops_image img {
+  height: 15vh;
+  width: calc(15vh);
+}
+
+@media screen and (max-width: 800px) {
+  .workshops_row {
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 5rem 1rem;
+  }
+  .workshops_images {
+    overflow-x: scroll;
+    margin-right: 1rem;
+  }
+  .workshops_image {
+    margin: 0 1rem;
+  }
+  .workshops_images::-webkit-scrollbar {
+    width: 10px;
+  }
+  .workshops_images::-webkit-scrollbar-track :vertical {
+    visibility: hidden;
+    border: none;
+  }
+  .workshops_images::-webkit-scrollbar-track-piece:horizontal {
+    border: 2px solid rgb(127, 192, 235);
+    border-radius: 10px;
+  }
+  .workshops_images::-webkit-scrollbar-thumb {
+    background-color: rgb(127, 192, 235);
+    border-radius: 10px;
+  }
+  .workshops_images::-webkit-scrollbar-corner {
+    visibility: hidden;
+  }
+}

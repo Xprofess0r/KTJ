@@ -1,0 +1,90 @@
+.full{
+    background-image:linear-gradient(to right bottom,rgba(0, 0, 0, 0.6),rgba(1, 1, 1, 0.6)),
+    url("https://i.imgur.com/3E4Y19y.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    position: absolute;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    font-size: 7rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ardela';
+}
+.heading{
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    text-shadow:
+    0 0 0px #fff,
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 2px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255);
+    font-family: 'Ardela';
+}
+.cards{
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    top:22vh;
+    background: rgba(138, 138, 138, 0.3);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.cards li{
+    height: 70vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    background: rgba(255, 255, 255, 0.5);
+    height: 20vh;
+    width: 30vw;
+    border-radius: 20px;
+}
+
+@media(max-width:700px){
+    .heading{
+        font-size: 5rem;
+    }
+}
+@media(max-width:550px){
+    .heading{
+        font-size: 4rem;
+    }
+}
+@media(max-width:400px){
+    .heading{
+        font-size: 3rem;
+    }
+}
+@media(max-height:850px){
+    .cards{
+        top:26vh;
+    }
+}
+@media(max-height:730px){
+    .cards{
+        top:28vh;
+    }
+    .heading{
+        font-size: 6rem;
+    }
+}
+@media(max-height:580px){
+    .heading{
+        font-size: 5rem;
+    }
+}

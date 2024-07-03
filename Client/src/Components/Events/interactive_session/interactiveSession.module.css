@@ -1,0 +1,136 @@
+.back,
+.back_2,
+.back_3 {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/interactiveSession/Desktop-bck.png");
+  background-size: cover;
+  background-repeat: repeat;
+  scroll-behavior: smooth;
+}
+
+.box {
+  background-color: #f8d2d6;
+  position: relative;
+  top: 17vh;
+  left: 7%;
+  height: 74vh;
+  width: 86%;
+  border-radius: 27px;
+  text-align: center;
+}
+
+.heading {
+  color: #1b1464;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+.heading_1 {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+  top: 13vh;
+}
+.summit_detail {
+  text-align: center;
+  max-width: 70%;
+  color: #1b1464;
+  font-weight: 600;
+  margin-left: 15%;
+}
+.content_box {
+  /* background-color: #d7f8d2; */
+  position: relative;
+  top: 1vh;
+  left: 7%;
+  height: 48vh;
+  width: 86%;
+  display: flex;
+  justify-content: center;
+  color: #1b1464;
+}
+.content_box > div {
+  /* background-color: rgba(0, 128, 128, 0.664); */
+  width: 22%;
+  margin: 2vh 5% 0 5%;
+  text-align: center;
+}
+.img,
+.img_1 {
+  width: 95%;
+  height: 32vh;
+  border-radius: 25px;
+  border: 5px solid #1b1464;
+}
+.img_1 {
+  width: 100%;
+}
+
+.discription,
+.discription_1,
+.discription_2 {
+  margin-top: 1vh;
+  font-weight: 500;
+}
+.discription_1 {
+  font-size: 0.85rem;
+}
+.discription_2 {
+  font-size: 0.75rem;
+}
+.downarroy {
+  font-size: 3rem;
+  color: #f8d2d6;
+  position: absolute;
+  left: 49%;
+  bottom: 1%;
+  cursor: pointer;
+}
+
+.REGISTER {
+  width: 50%;
+  /* margin-left: 39%; */
+  padding: 0.5rem 2rem;
+  border-radius: 9rem;
+  color: black;
+  margin: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  background-color: rgba(249, 117, 126, 0.835);
+  border: 0.1em solid rgb(249, 117, 125);
+  margin-top: 3vh;
+}
+.ButtonTray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0rem auto;
+  margin-bottom: 1rem;
+}
+.REGISTER a {
+	color: black;
+  text-decoration: none;
+}
+.table_pos {
+  top: 0vh;
+  left: 68%;
+
+  position: absolute;
+}
+.table {
+  width: 100%;
+  height: 40vh;
+}
+.camera_pos {
+  top: 50vh;
+  left: 5%;
+  position: absolute;
+}
+.camera {
+  width: 10%;
+  height: 20vh;
+}

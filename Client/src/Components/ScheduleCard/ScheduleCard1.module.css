@@ -1,0 +1,90 @@
+.ScheduleCard {
+  width: 80%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 1rem;
+  background-color: #484173;
+  display: flex;
+  margin: 1rem 0;
+}
+
+
+.ScheduleCard_ImgCnt {
+  width: 8rem;
+  height:8rem;
+  box-sizing: border-box;
+}
+.ScheduleCard_ImgCnt img {
+  width: 90%;
+  height: 100%;
+}
+.ScheduleCard_Host {
+  font-weight: bold;
+  padding-right: 0.5rem;
+  min-width: 50%;
+  padding-bottom: 0.5rem;
+}
+.InfoCnt {
+  width: 80%;
+  color: #b8b1d8;
+  box-sizing: border-box;
+}
+
+
+.ScheduleCard_company{
+  font-weight:bold ;
+  margin-bottom: 0.4rem;
+}
+.joinbtn{
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  margin-top:1rem;
+  padding:0.7rem 1.8rem ;
+  background-color: #5e527f;
+  color: #b8b1d8;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-weight: 900;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .ScheduleCard {
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 0.8rem;
+  }
+  .InfoCnt_timeCnt {
+    padding: 0;
+  }
+  .ScheduleCard_Host {
+    padding: 0;
+    border: none;
+  }
+  .ScheduleCard_ImgCnt {
+    width: 30%;
+    box-sizing: border-box;
+  }
+  .ScheduleCard_ImgCnt img {
+    width: 90%;
+    height: 100%;
+  }
+  .InfoCnt {
+    width: 70%;
+    color: #b8b1d8;
+    box-sizing: border-box;
+  }
+  .joinbtn
+  {
+    width: 65%;
+  }
+
+}

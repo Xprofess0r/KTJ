@@ -1,0 +1,124 @@
+.sponsors_page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://i.postimg.cc/wM7Lz9sT/background.png");
+    background-repeat:no-repeat;
+    overflow: hidden;
+    background-size:cover;
+  }
+  
+  .box{
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: 10vh;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+  
+  .heading_sponsors img{
+    height: 5rem;
+    width: 23rem;
+    margin-right: 10rem;
+  }
+  
+  .body_sponsors{
+    display: flex;
+    margin: 0 0 0 1rem;
+  }
+  
+  .box_image{
+    height: 70vh;
+    width: 55vw;
+    margin-bottom: 5%;
+  }
+  
+  .clock_box{
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+  
+  .time_travel_clock{
+    display: flex;
+    width: 8rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+  }
+  
+  .time_travel_clock{
+    display: flex;
+    width: 8rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+    /* background-color: aliceblue; */
+  }
+  
+  img.year_2024{
+    position: relative;
+    top: 2.7rem;
+    height: 1.4rem;
+    width: 4.4rem;
+    z-index: 2000;
+  }
+  
+  .time_clock{
+    position: relative;
+    /* top: 5rem; */
+  }
+  
+  .glow{
+    position: absolute;
+    /* height: 5rem; */
+    right: -0.5rem;
+    top: .5rem;
+    opacity: 0.4;
+  }
+  
+  .glow_more{
+    opacity: 0.7;
+  }
+  
+  .clock_image{
+    position: relative;
+    top: 1.5rem;
+    height: 4rem;
+    width: 3.7rem;
+  
+  }
+  
+  img.year_2023{
+    position: relative;
+    top: 2.78rem;
+    height: 1.4rem;
+    width: 4.4rem;
+    z-index: 2000;
+  }
+  img.year_2022{
+    position: relative;
+    top: 2.78rem;
+    height: 1.4rem;
+    width: 4.4rem;
+    z-index: 2000;
+  }
+  img.year_2021{
+    position: relative;
+    top: 2.78rem;
+    height: 1.4rem;
+    width: 4.4rem;
+    z-index: 2000;
+  }
+  img.year_2020{
+    position: relative;
+    top: 2.78rem;
+    height: 1.4rem;
+    width: 4.4rem;
+    z-index: 2000;
+  }
+  
+  .time_clock{
+    position: absolute;
+    right: 15rem;
+  }
+  

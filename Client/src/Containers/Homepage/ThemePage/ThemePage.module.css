@@ -1,0 +1,520 @@
+@font-face {
+  font-family: 'Gluon';
+  src: local('../../../fonts/Gluon Bold'), local('../../../fonts/Gluon-Bold'),
+    url('../../../fonts/Gluon-Bold.woff2') format('woff2'),
+    url('../../../fonts/Gluon-Bold.woff') format('woff'),
+    url('../../../fonts/Gluon-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Solomon Sans Med';
+  src: url('../../../fonts/SolomonSans-Medium.eot');
+  src: local('../../../fonts/Solomon Sans Medium'), local('../../../fonts/SolomonSans-Medium'),
+    url('../../../fonts/SolomonSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../../../fonts/SolomonSans-Medium.woff2') format('woff2'),
+    url('../../../fonts/SolomonSans-Medium.woff') format('woff'),
+    url('../../../fonts/SolomonSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ardela';
+  src: url('../../../fonts/EllenLuff - Ardela Edge X03 Regular.otf');
+}
+
+.container {
+  position: relative;
+}
+
+
+
+
+.posT{
+  position: absolute;
+  top: 25vh;
+  left: 12vw;
+  width:30vw;
+}
+.He1 {
+  color: rgb(143,228,139);
+  font-family: 'Ardela';
+  font-weight: 550;
+  letter-spacing: 0.3vw;
+  transition: all 3s ease-in-out 0s;;
+  animation: animate2 3s ease-in-out infinite;
+}
+@keyframes animate2 { 
+  50% {
+     text-shadow: 4px -4px 10px #7cd87c,
+     -4px 4px 10px #09ce09;
+  }
+}
+.De1 {
+  border-left: 0.3vw solid white;
+  padding-left: 0.7vw;
+}
+
+p {
+  /* background-color:red ; */
+  align-self: flex-start;
+}
+
+.imageA {
+  width: 40vw;
+  height:auto;
+  right: 20vw;
+  top: 22vh;
+  position: absolute;
+  animation-name:updown;
+  animation-timing-function:ease-in-out;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  transition:all;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+
+@keyframes updown{
+  0%{
+    margin-top: -0.7%;
+  }
+  50%{
+    margin-top:0.7%;
+  }
+  100%{
+    margin-top:-0.7%;
+  }
+
+}
+
+@keyframes updownT1{
+  0%{
+    top:160vh;
+    left:-20vw;
+  }
+
+  100%{
+    top:-50vh;
+    left:40vw;
+    transform: rotate(360deg);
+  }
+
+
+
+}
+@keyframes updownT2{
+  0%{
+    top:-10vh;
+    left:50vw;
+  }
+
+  100%{
+    top:110vh;
+    left:100vw;
+    transform: rotate(360deg);
+    
+  }
+
+}
+
+.imageC {
+  width: 35vw;
+  height:auto;
+  right: 13vw;
+  top: 10vh;
+  position: absolute;
+  transform-origin: 53% 50%;
+  animation: circle-spin 7s infinite linear;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+@keyframes circle-spin { 
+  from {
+   transform: rotate(0deg);
+ }
+ to {
+   transform: rotate(360deg);
+ }
+} 
+
+.capsule {
+  position: absolute;
+  right: 25vh;
+  top: 17.5vh;
+  /* height: 80vh; */
+  width: 20vw;
+  z-index: 0;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+
+.asteroids {
+  position: absolute;
+  height: 100vh;
+  width:100vw;
+  z-index:1rem;
+  opacity:0.5;
+  /* object-fit: cover; */
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  animation-name: vanish;
+  animation-timing-function:ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  transition:all;
+
+}
+
+@keyframes  vanish{
+  0%{
+    opacity:0.4;
+  }
+
+  50%{
+    opacity:0.8;
+  }
+
+  100%{
+    opacity:0.4;
+  }
+
+}
+
+
+.asteroids1 {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  opacity: 0.5;
+  top:70vh;
+  left:10vw;
+  animation-name:updownT1;
+  animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  transition:all;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+.asteroids2 {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  opacity: 0.5;
+left:85vw;
+top:70vh;
+animation-name:updownT2;
+animation-timing-function:cubic-bezier(0.165, 0.84, 0.14, 1);
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+  transition:all;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+
+
+.astronaut {
+  position: absolute;
+  width: 60vw;
+  /* background-color: red; */
+  top: 10vh;
+  left: 13.5vw;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+
+.circles {
+  position: absolute;
+  width: 32.5vw;
+  right: 6vw;
+  top: 11vh;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+
+@media screen and (max-width: 1050px) {
+  .imageA {
+    position: absolute;
+    left: 27vw;
+    width: 60vw;
+    height:auto;
+    top:20vh;
+  }
+  .imageC {
+    position: absolute;
+    left: 50vw;
+    width: 45vw;
+    height:auto;
+    top:10vh;
+  }
+
+  .posT {
+    width: 36vw;
+    top:16vh;
+    left:6vw;
+  } 
+
+}
+@media screen and (max-width: 920px) {
+  .imageA {
+    position: absolute;
+    left: 30vw;
+    width: 60vw;
+    height:auto;
+    top:18vh;
+  }
+  .imageC {
+    position: absolute;
+    left: 55vw;
+    width: 45vw;
+    height:auto;
+    top:10vh;
+  }
+  
+
+  .posT {
+    width: 36vw;
+    top:16vh;
+    left:6vw;
+  } 
+
+}
+@media screen and (max-width:820px) {
+  .imageA {
+    left: 32vw;
+    width: 50vw;
+    height:auto;
+    top:55vh;
+  }
+  .imageC {
+    width:40vw;
+    height:auto;
+    top:40vh;
+    left:50vw;
+  }
+  .posT {
+    width: 80vw;
+    top:18vh;
+    left:6vw;
+  } 
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .imageA {
+    position: absolute;
+    left: 11vw;
+    width: 70vw;
+    height:auto;
+    top:35vh;
+  }
+  .imageC {
+    position: absolute;
+    left: 40vw;
+    width: 100vw;
+    height:auto;
+    top:30vh;
+  }
+  .posT {
+    width: 40vw;
+    top:18vh;
+    left:6vw;
+  } 
+  .imageC {
+    width:50vw;
+    height:auto;
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .imageA {
+    position: absolute;
+    left: 15vw;
+    width: 70vw;
+    height:auto;
+    top:18vh;
+  }
+  .imageC {
+    position: absolute;
+    left: 45vw;
+    width: 50vw;
+    height:auto;
+    top:12vh;
+  }
+
+  .posT {
+    width: 38vw;
+    top:18vh;
+    left:8vw;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  .imageA {
+    position: absolute;
+    left: 10vw;
+    width: 70vw;
+    height:auto;
+    top:15vh;
+  }
+  .imageC {
+    position: absolute;
+    left: 40vw;
+    width: 50vw;
+    height:auto;
+    top:9vh;
+  }
+
+  .posT {
+    width: 45vw;
+    top:46vh;
+  } 
+}
+
+@media screen and (max-width: 500px) {
+  .imageA {
+    position: absolute;
+    left: 12vw;
+    height:auto;
+    width:70vw;
+    top:13vh;
+  }
+  .imageC {
+    position: absolute;
+    left: 40vw;
+    height:auto;
+    width:50vw;
+    top:8vh;
+  }
+  .posT {
+    width: 60vw;
+    top:43vh;
+  } 
+
+  .asteroids{
+    height:68vh;
+  }
+ 
+}
+
+@media screen and (max-width: 421px) {
+  .imageA {
+    left: 5vw;
+    width:80vw;
+    height:auto;
+    top:15vh;
+  }
+  .imageC {
+    left: 35vw;
+    width: 60vw;
+    height:auto;
+    top:8vh;
+  }
+ 
+  .posT {
+    width: 52vw;
+    top:46vh;
+  } 
+
+  .asteroids{
+    height:68vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .imageA {
+    left: 0vw;
+    width:85vw;
+    height:auto;
+    top:15vh;
+  }
+  .imageC {
+    left: 35vw;
+    width:60vw;
+    height:auto;
+    top:10vh;
+  }
+  .He1{
+    font-size: 1.5rem;
+  }
+  .De1{
+    font-size: 0.8rem;
+    
+  }
+  .posT {
+    width: 60vw;
+    top:50vh;
+    left:6vw;
+  }
+}
+@media screen and (max-width: 280px) {
+  .imageA {
+    left: 0vw;
+    height:auto;
+    width:85vw;
+    top:15vh;
+  }
+  .imageC {
+    left: 30vw;
+    height:auto;
+    width: 65vw;
+    top:10vh;
+  }
+  .He1{
+    font-size: 1.5rem;
+  }
+  .De1{
+    font-size: 0.8rem;
+    
+  }
+  .posT {
+    width: 85vw;
+    top:45vh;
+    left:7vw;
+  }
+}

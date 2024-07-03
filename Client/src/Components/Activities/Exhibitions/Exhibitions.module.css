@@ -1,0 +1,229 @@
+.OuterPart {
+    position: relative;
+    padding-top: 10vh;
+    /* top: 10vh; */
+    /* background: url("https://github.com/KSHITIJ-2022/media/blob/master/Exhibitions/exhibitions%20png.png?raw=true") ; */
+    /* display: flex; */
+    /* flex-flow: column wrap; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    background: #010436 url(https://github.com/KSHITIJ-2022/media/blob/master/Exhibitions/exhibitions%20png.png?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    overflow-y: scroll;
+    /* height: calc(min-content+100px); */
+    /* overflow-x: scroll; */
+    /* min-width: 377px; */
+}
+
+.OuterPart::-webkit-scrollbar {
+    width: 1px;
+    background-color: rgba(240, 248, 255, 0.322);
+    border-radius: 10px;
+}
+
+.exhHeading h2{
+    
+}
+
+
+/* Track */
+
+.OuterPart::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 0px;
+}
+
+
+/* Handle */
+
+.OuterPart::-webkit-scrollbar-thumb {
+    background: rgb(241, 236, 236);
+    border-radius: 0px;
+}
+
+
+/* Handle on hover */
+
+.OuterPart::-webkit-scrollbar-thumb:hover {
+    background: rgba(236, 233, 233, 0.603);
+}
+
+.OuterPart h2 {
+    /* padding: 1rem; */
+    width: 100%;
+    text-align: center;
+    /* margin: auto; */
+    color: white;
+    margin-top: 2rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+    /* position: relative; */
+    /* top: 11vh; */
+}
+
+.BorderCard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto) ; */
+    /* grid-template-columns: minmax(100px, 1fr) minmax(300px, 2fr) ; */
+    /* grid-template-columns: 1fr  2fr ; */
+}
+
+.NameArea {
+    cursor: pointer;
+    width: 23%;
+    min-width: 100px;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6vh;
+    background-image: linear-gradient(
+    to right,
+    rgba(146, 149, 163, 0.568),
+    rgba(58, 57, 57, 0.644)
+  );
+}
+
+.AName {
+    /* margin-bottom: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.7rem;
+    padding-left: 0.2rem;
+    padding-right: 0rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.438);
+}
+.AName:hover{
+    text-shadow: 0 0 6px white;
+}
+
+.AName.TextSelected:hover{
+    text-shadow: 4px 4px 20px #ffffff, -4px 4px 20px #ffffff;
+}
+
+.CardArea {
+    width: 73%;
+    padding: 1rem;
+    margin-right: 1rem;
+    /* min-width: 380px; */
+}
+
+.InCardArea {
+    width: 100%;
+}
+
+.TextSelected {
+    text-shadow: 4px 4px 20px #ffffff, -4px 4px 20px #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.521);
+  border-image: conic-gradient(
+    rgba(255, 255, 255, 0.678),
+    rgba(255, 255, 255, 0.678),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.678),
+    rgba(255, 255, 255, 0.678),
+    rgba(255, 255, 255, 0.671),
+    rgba(255, 255, 255, 0.678),
+    rgba(255, 255, 255, 0.678),
+    rgba(255, 255, 255, 0.671),
+    rgba(255, 255, 255, 0.651),
+    rgba(255, 255, 255, 0.623),
+    rgba(255, 255, 255, 0.63),
+    rgba(255, 255, 255, 0.596),
+    rgba(255, 255, 255, 0.616),
+    rgba(255, 255, 255, 0.616)
+    )
+    1;
+    background-image: linear-gradient(
+    to right,
+    rgba(146, 149, 163, 0.568),
+    rgba(58, 57, 57, 0.644)
+  );
+}
+
+@media only screen and (max-width:998px) {
+    .CardArea {
+        /* transform: scale(0.9); */
+        width: 92%;
+        margin-right: 0;
+        padding: 0rem;
+        margin-top: 1rem;
+    }
+    .NameArea {
+        display: none;
+    }
+    .BorderCard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .MobileNameArea {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 79%;
+        margin-bottom: 0.5rem;
+    }
+    .OuterPart {
+        background: #010436 url(https://github.com/KSHITIJ-2022/media/blob/master/Exhibitions/exhibitions--mobile.png?raw=true);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 3vh;
+    }
+    .AName {
+        color: white;
+        font-size: .8rem;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+    }
+    .exhHeading {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-weight: 900;
+        font-size: 3rem;
+    }
+    .exhHeading h2 {
+        width: 70%;
+        margin-bottom: 1rem;
+        font-size: 2.6rem;
+    }
+    .TextSelected {
+        color: #010436 !important;
+        font-weight: 600;
+        background-image: linear-gradient(
+        rgba(112, 111, 111, 0.027),
+        rgba(187, 183, 183, 0.89)
+        );
+        border: 0;
+        border-bottom: 3px solid white;
+        border-image: none;
+    }
+}
+
+@media only screen and (min-width:999px) {
+    .MobileNameArea {
+        display: none;
+    }
+}

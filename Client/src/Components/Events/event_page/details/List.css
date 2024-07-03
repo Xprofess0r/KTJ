@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul div {
+  display: flex;
+  justify-content: left;
+}
+
+.lbox{
+  padding:1%
+}

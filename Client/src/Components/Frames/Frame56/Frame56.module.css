@@ -1,0 +1,66 @@
+.container {
+  --left-width: 44.4%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  transform: scale(0.0168);
+  top: -9.5%;
+  left: 4.358%;
+}
+
+.left,
+.right {
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.left {
+  width: var(--left-width);
+  background-color: #6242b4;
+  --window-height: 39%;
+}
+
+.right {
+  width: calc(100% - var(--left-width));
+  /* background-color: #120a5a; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.window1 {
+  height: var(--window-height);
+  width: 80%;
+  top: 7em;
+  right: 0;
+}
+
+.window2 {
+  height: var(--window-height);
+  width: 80%;
+  right: 0;
+  bottom: 0;
+}
+.right input:hover {
+  border-bottom: 10px solid white;
+}
+
+.frameEmail {
+  margin-top: 1em;
+  margin-left: 1em;
+  color: #c4b9e2;
+  display: inline-block;
+}
+.inputEmail {
+  background-color: #c4b9e2;
+  padding: 6rem 7rem;
+  width: 60%;
+  outline: none;
+  border: none;
+}
+.inputEmail:valid {
+  background-color: #c4b9e2;
+}

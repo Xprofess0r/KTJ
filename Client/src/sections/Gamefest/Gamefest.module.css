@@ -1,0 +1,67 @@
+.full{
+    background-image:linear-gradient(to right bottom,rgba(0, 0, 0, 0.6),rgba(1, 1, 1, 0.6)),
+    url("https://i.imgur.com/ubK2DTA.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    /* font-size: 7rem; */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ardela';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.heading{
+    margin-top: 7rem;
+    text-align: center;
+    width: 90%;
+    font-size: 4rem;
+    z-index: 1;
+    text-shadow:
+    0 0 0px #fff,
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 2px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255);
+}
+.register{
+    position: absolute;
+    bottom: 120px;
+    transition: all 0.5s ease;
+}
+.register button{
+    cursor: pointer;
+    text-shadow:
+    0 0 0px #fff,
+    0 0 5px #fff,
+    0 0 0px #fff,
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255);
+    padding: 0 40px 0 40px;
+    background-color: rgb(122,120,114);
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.register:hover{
+    position: absolute; 
+    bottom: 130px;
+    transition: all 0.5s ease;
+} 
+.link{
+    color: white;
+    font-size: 3rem;
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,135 @@
+/* styles.css */
+@import url('https://fonts.cdnfonts.com/css/montserrat');  
+
+@font-face {
+    font-family: 'Backsteal';
+    src: local('Backsteal'), url('/Fonts/FontsFree-Net-Backsteal-Regular.ttf') format('truetype');
+  }
+
+/* @import url('https://fonts.cdnfonts.com/css/montserrat');   */
+body {
+    font-family: 'Backsteal', sans-serif;
+}
+
+/* Add other styles as needed */
+
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://i.postimg.cc/s2YjTFm5/wholebackground.png');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+}
+
+.bg>img {
+    display: block;
+    margin-left: auto;
+}
+
+.rectangle {
+    background-image: url('https://i.postimg.cc/cLqYwZNF/rectangle.png');
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 100vh;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: 'montserrat';
+    font-size: 1.5rem;
+}
+
+.logo>img {
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    width: 100%;
+    height: 10vh;
+    font-size:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash_button {
+    color: #000101;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    width: 100%;
+
+}
+
+.ktjID {
+    font-family: "montserrat", sans-serif;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 1rem;
+}
+@media (max-width: 1130px) {
+    .text {
+        font-size: 1.3rem;
+    }
+    .ktjID {
+        font-size: 0.8rem;
+    }
+    .rectangle{
+        width: 50vw;
+    }
+}
+@media (max-width: 960px){
+    .text {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 850px){
+    .text {
+        font-size: 1.1rem;
+    }
+    .ktjID {
+        font-size: 0.7rem;
+    }
+    .rectangle{
+        width: 55vw;
+    }
+}
+@media (max-width: 800px){
+    .text {
+        font-size: 0.9rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .ktjID {
+        font-size: 1rem;
+    }
+    .dash_button{
+        font-size: 1rem;
+    }
+    .rectangle{
+        width: 100vw;
+    }
+}
+/* @media (max-width: 700px){
+    .rectangle{
+        width: 100vw;
+    }
+} */

@@ -1,0 +1,608 @@
+.container {
+  position: relative;
+}
+
+
+
+.asteroids {
+  position: absolute;
+  height: 80vh;
+  width: 80vw;
+  
+  opacity:0.5;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+@keyframes updownS1{
+  0%{
+    top:-10vh;
+    left:-5vw;
+  }
+
+
+  100%{
+    top:110vh;
+    left:50vw;
+    transform: rotate(500deg);
+  }
+}
+@keyframes updownS2{
+  0%{
+    top:110vh;
+    left:100vw;
+  }
+
+
+  100%{
+    top:-10vh;
+    left:40vw;
+    transform: rotate(600deg);
+  }
+
+}
+@keyframes updownS3{
+  0%{
+    top:110vh;
+    left:20vw;
+  }
+
+
+  100%{
+    top:-20vh;
+    left:75vw;
+    transform: rotate(600deg);
+  }
+
+}
+.meteorite1 {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  z-index: 0;
+  top: 65vh;
+  left: 20vw;
+  animation-name: updownS3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  transition: all;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.asteroidsS1 {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  z-index: 0;
+  opacity:0.5;
+top:15vh;
+left:5vw;
+animation-name:updownS1;
+  animation-timing-function:ease-in-out;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  transition:all;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.asteroidsS2 {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  z-index: 0;
+  opacity:0.5;
+  top:50vh;
+  left:55vw;
+  animation-name:updownS2;
+  animation-timing-function:ease-in-out;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  transition:all;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+
+.spaceshipC {
+  position: absolute;
+  z-index: 0;
+  width: 38vw;
+  top: 3vh;
+  right:4vw;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  animation: space_spin 20s;
+  animation-iteration-count: infinite;
+   
+  
+
+}
+.spaceshipO {
+  position: absolute;
+
+  width: 40vw;
+  top: 3vh;
+  right:2vw;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+ 
+   
+  
+
+}
+ 
+  
+@keyframes space_spin{
+  from{
+    width: 50vw;
+  transform: rotate(-70deg);
+  transform-origin: top right;
+}
+to{
+  width: 30vw;
+  margin-right: 15vw;
+  transform: rotate(50deg);
+  transform-origin: top right;
+}
+}
+@keyframes space_spin2{
+from{
+}
+to{
+  transform: translateY(-1.2rem);
+}
+}
+
+
+
+.pos3 {
+  position: absolute;
+ left:12vw;
+  top:35vh;
+  width:25vw;
+  z-index: 500;
+}
+.He3 {
+  color:#dfb2b2;
+  font-family:'Ardela';
+  font-weight: 550;
+ 
+  letter-spacing: 0.1vw;
+  transition: all 3s ease-in-out 0s;;
+  animation: animate2 3s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes animate2 { 
+  50% {
+    text-shadow: 4px -4px 10px #ec7070,
+    -4px 4px 10px #ec7070;
+  }
+}
+.De3 {
+  border-left: 0.3vw solid white;
+  padding-left: 0.7vw;
+}
+.planet {
+  right:0vw;
+  position: absolute;
+  width:25vw;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  animation: space_spin2 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.registerDiv {
+  width: 28vw;
+  background-color: rgb(61,36,51);
+  position:relative;
+ left:68vw;
+  top:65vh;
+  box-shadow: 0 0 2px 2px rgb(242, 222, 222);
+  display: flex;
+  flex-direction: column;
+  
+  font-family: 'Ardela';
+  letter-spacing: 0.05rem;
+  font-weight:550;
+  
+
+ 
+}
+
+.registerDiv h3 {
+  position: relative;
+ font-size: 1rem;
+  font-weight:550;
+  color: white;
+ align-self: center;
+  padding: 1.5vh 1.5vw;
+  letter-spacing: 0.1vw;
+  
+}
+.registerDiv label {
+  color:white;
+ 
+  font-size: 1rem;
+padding-left: 2vw;
+letter-spacing: 0.1vw;
+
+}
+.registerDiv button {
+  background: transparent;
+  border:0.1rem  solid #DAAEAE;
+  color: white;
+  position: relative;
+  padding: 0 0.5vw;
+ align-self: center;
+  width: max-content;
+  font-weight:550;
+  font-size: 1.2rem;
+  letter-spacing: 0.1vw;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.5s all ease;
+  border-radius: 2px;
+  margin: 3vh 7vw;
+}
+
+.registerDiv button:hover {
+  background: #DAAEAE;
+  color: rgb(61,36,51);
+  transition: 0.5s all ease;
+}
+
+.rowS {
+  display: flex;
+  flex-direction: row;
+  top:50vh;
+  position: relative;
+  
+}
+
+.registerDiv input {
+  background: transparent;
+  border-bottom: 0.1rem solid #DAAEAE;
+  border-top: none;
+  padding:0.3rem;
+  border-left: none;
+  border-right:none;
+  width:55%;
+  color: white;
+  height:1.5rem;
+ margin-left: 0.2vw;
+  -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+  .planet {
+    top: 5vh;
+    right:0vw;
+    width: 50vw;
+    display:none;
+  }
+
+  .spaceshipC {
+    position: absolute;
+    width: 60vw;
+    left:45vw;
+    top: -7vh;
+    
+  }
+  .spaceshipO {
+    position: absolute;
+    width: 60vw;
+    left:45vw;
+    top: -7vh;
+    
+  }
+  .pos3 {
+left:8vw;
+width:35vw;
+top:55vh;
+  }
+  .registerDiv {
+    width: 36vw;
+    left:50vw;
+  }
+  .registerDiv h3 {
+   font-size: 1rem;
+   
+   padding:1vh 2vw;
+  }
+  .registerDiv label {
+    font-size: 1rem;
+  }
+  .registerDiv button {
+   margin: 1.5vh 12vw;
+   font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width:740px) {
+  .He3{
+    font-size: 2rem;
+  }
+  .De3{
+    font-size: 0.8rem;
+  
+    padding-left: 2vw;
+  }
+  .pos3 {
+    width: 40vw;
+    top:60vh;
+    left:11vw;
+  }
+  .spaceshipC {
+    position: absolute;
+    width: 70vw;
+    top:-5vh;
+    left:45vw;
+  }
+  .spaceshipO {
+    position: absolute;
+    width: 70vw;
+    top:-5vh;
+    left:45vw;
+  }
+  .planet {
+   display:none;
+  }
+  .registerDiv {
+    width: 38vw;
+    left:60vw;
+  }
+  .registerDiv h3 {
+   font-size: 0.8rem;
+    padding: 1.3vh 2vw;
+  }
+  .registerDiv label {
+    font-size: 0.8rem;
+  }
+  .registerDiv button {
+   margin: 1.5vh 12vw;
+   font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width:551px) {
+  .He3{
+    font-size: 1.8rem;
+  }
+  .De3{
+    font-size: 0.8rem;
+  
+    padding-left: 2vw;
+  }
+  .pos3 {
+    width: 80vw;
+    top:48vh;
+    left:10vw;
+  }
+  .spaceshipC {
+    position: absolute;
+    width: 60vw;
+    top:0vh;
+    left:50vw;
+  }
+  .spaceshipO {
+    position: absolute;
+    width: 60vw;
+    top:0vh;
+    left:50vw;
+  }
+  .planet {
+   display:none;
+  }
+ 
+  .registerDiv {
+    width:44vw;
+    left:50vw;
+  }
+  .registerDiv h3 {
+   font-size: 0.7rem;
+    padding: 1.3vh 4vw;
+  }
+  .registerDiv label {
+    font-size: 0.7rem;
+  }
+  .registerDiv button {
+   margin: 1.5vh 12vw;
+   font-size: 0.7rem;
+  }
+
+  
+  
+  
+}
+
+@media screen and (max-width:460px) {
+  .He3{
+    font-size: 1.5rem;
+  }
+  .De3{
+    font-size: 0.7rem;
+  
+    padding-left: 2vw;
+  }
+  .pos3 {
+    width: 40vw;
+    top:55vh;
+    left:4vw;
+  }
+  .spaceshipC {
+    position: absolute;
+    width: 60vw;
+    top:3vh;
+    left:40vw;
+  }
+  .spaceshipO {
+    position: absolute;
+    width: 60vw;
+    top:3vh;
+    left:40vw;
+  }
+  .planet {
+   display:none;
+  }
+  
+  .registerDiv {
+    width:45vw;
+    left:40vw;
+    left:47vw;
+  }
+    
+   
+  .registerDiv h3 {
+    font-size: 0.7rem;
+    padding:1vh 2vw;
+    }
+   
+    
+    .registerDiv label {
+      font-size: 0.7rem;
+    }
+    .registerDiv button {
+      font-size: 0.7rem;
+      margin:1vh 11vw;
+    }
+  }
+  
+
+@media screen and (max-width:394px) {
+  .He3{
+    font-size: 1.5rem;
+  }
+  .De3{
+    font-size: 0.6rem;
+  
+    padding-left: 2vw;
+  }
+  .pos3 {
+    width: 45vw;
+    top:55vh;
+    left:5vw;
+  }
+  .spaceshipC {
+    position: absolute;
+    width: 60vw;
+    top:3vh;
+    left:42vw;
+  }
+  .spaceshipO {
+    position: absolute;
+    width: 60vw;
+    top:3vh;
+    left:42vw;
+  }
+  .planet {
+   display:none;
+  }
+  .registerDiv {
+    width:43vw;
+    left:52vw;
+
+  }
+  .registerDiv h3 {
+    font-size: 0.5rem;
+    padding:1vh 2vw;
+    }
+   
+    
+    .registerDiv label {
+      font-size: 0.5rem;
+    }
+    .registerDiv button {
+      font-size: 0.5rem;
+      margin:1vh 11vw;
+    }
+    
+  }
+ 
+
+@media screen and (max-width:295px) {
+  
+  
+  
+    .pos3 {
+      width: 45vw;
+      top:50vh;
+      left:1vw;
+    
+    }
+    .De3{
+      font-size: 0.6rem;
+    
+      padding-left: 2vw;
+    }
+    .spaceshipC {
+      position: absolute;
+      width: 60vw;
+      top:2vh;
+      left:40vw;
+    }
+    .spaceshipO {
+      position: absolute;
+      width: 60vw;
+      top:2vh;
+      left:40vw;
+    }
+    .planet {
+     display:none;
+    }
+   
+   
+    .registerDiv {
+      width:45vw;
+      left:50vw;
+  top:65vh;
+    }
+    .registerDiv h3 {
+      font-size: 0.4rem;
+      padding:0.7vh 2vw;
+      }
+     
+      
+      .registerDiv label {
+        font-size: 0.4rem;
+      }
+      .registerDiv button {
+        font-size: 0.4rem;
+        margin:1.2vh 11vw;
+      }
+  }
+  
+ 

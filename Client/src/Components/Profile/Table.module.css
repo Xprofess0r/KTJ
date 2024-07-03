@@ -1,0 +1,1480 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300&family=Lora&family=Roboto+Slab&display=swap');
+.form{
+    height: 100vh;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0vh;
+	justify-content: space-evenly;
+    align-items: center;
+    
+    color: white;
+}
+.ftag{
+    height: 100vh;
+    /* width: 50vh */
+}
+.IForm{
+    align-items: center;
+    /* height: 88vh; */
+    /* margin-bottom: 6vh; */
+    margin-left: 6vw;
+    /* border: 3px solid black; */
+    width: 40vw;
+    font-family: 'Cabin', sans-serif;
+}
+ 
+.imgDiv
+{
+  height: 106vh;
+  width:50%;
+  color: white;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-image: url('./Images/sidebg.png');
+ position: relative;
+ /* left: -27px; */
+ left: -1.5vw;
+}
+ 
+  
+  
+.image1{
+  
+  /* height: 90%; */
+  width: 85%;
+    position: relative;
+    top: 9vh;
+    left: 22vh;
+    /* align-items: center; */
+    animation-name: astro;
+    animation-duration: 6s;
+  
+    animation-iteration-count: infinite;
+
+   
+  /* transition:cubic-bezier(0.19, 1, 0.22, 1); */
+
+}
+@keyframes astro {
+  0%   {top:20px}
+    25%  {top:5px}
+    50%  {top:0px}
+    75%  {top:5px}
+    100% { top:20px}
+ 
+    
+  
+  }
+   
+  
+/* .leftdiv{
+    position: absolute;
+    left: 50%;
+    height: 100vh;
+  width:50%; 
+background-image: url('./Images/bg2.png');
+ 
+} */
+.Row{
+    
+    display: inline-flex;
+    flex-direction: row;
+    height: 7.25vh;
+    width: 38vw;
+    align-items: flex-end;
+position: relative;
+left: -7vw;
+font-family: 'Cabin', sans-serif;
+    /* align-items: flex-start; */
+}
+.GRow{
+    font-family: 'Cabin', sans-serif;
+    display: inline-flex;
+    flex-direction: row;
+    height: 8vh;
+    width: 38vw;
+    align-items: flex-end;
+    position: relative;
+    left: -7vw;
+}
+.ERow{
+    display: inline-flex;
+    font-family: 'Cabin', sans-serif;
+    flex-direction: row;
+    height: 8vh;
+    width: 38vw;
+    padding-top: 4vh;
+    align-items: flex-start;
+    position: relative;
+left: -7vw;
+}
+.fkey{
+    font-family: 'Cabin', sans-serif;
+    /* font-weight: 600;
+    font-size: 1.1rem; */
+    font-weight: 300;
+    font-size: 1.17rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    /* margin-right: 5vw; */
+    /* margin-left: 2vw; */
+    width: 15vw;
+ 
+    text-align: end;
+    
+}
+.Gkey{
+ /* font-weight: 600;
+    font-size: 1.1rem; */
+    font-weight: 300;
+    font-size: 1.17rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    /* margin-right: 5vw; */
+    /* margin-left: 2vw; */
+    width: 15vw;
+    font-family: 'Cabin', sans-serif;
+    text-align: end;
+}
+.fvalue {
+    font-family: 'Cabin', sans-serif;
+   
+    /* font-weight: 600; */
+    /* font-size: 1.1rem; */
+    margin-left: 10px;
+    font-size: 1.2rem;
+    width: 23vw;
+    text-align: left;
+    padding-left: 2vw;
+}
+.fCSvalue1{
+    font-family: 'Cabin', sans-serif;
+     /* font-weight: 600; */
+    /* font-size: 1.1rem; */
+    margin-left: 10px;
+    font-size: 1.2rem;
+    width: 12.5vw;
+    text-align: left;
+    padding-left: 2vw;
+    overflow:visible;
+    min-width: fit-content;
+ 
+}
+.fCSvalue2{
+    font-family: 'Cabin', sans-serif;
+    /* font-weight: 600; */
+   /* font-size: 1.1rem; */
+ 
+   font-size: 1.2rem;
+   width: 10vw;
+   text-align: left;
+   padding-left: 2vw;
+}
+.OG{
+    font-family: 'Cabin', sans-serif;
+    /* font-weight: 600; */
+    /* font-size: 1.1rem; */
+    margin-left: 10px;
+    font-size: 1.2rem;
+    width: 23vw;
+    text-align: left;
+    padding-left: 2vw;
+
+}
+.SG{
+    font-family: 'Cabin', sans-serif;
+    /* font-weight: 600; */
+    /* font-size: 1.1rem; */
+    margin-left: 10px;
+    font-size: 1.2rem;
+    width: 23vw;
+    text-align: left;
+    padding-left: 2vw;
+
+}
+.fEvalue{
+    font-family: 'Cabin', sans-serif;
+    /* font-weight: 600; */
+    /* font-size: 1.1rem; */
+    margin-left: 10px;
+    font-size: 1.2rem;
+    width: 23vw;
+    text-align: left;
+    padding-left: 2vw;
+}
+
+.SG{
+    font-family: 'Cabin', sans-serif;
+    align-items: center;
+
+}
+
+.fNameR{
+    height: 10vh;
+    margin-top: 10vh;
+    display: inline-flex;
+    flex-direction: row;
+    width: 35vw;
+    /* border: 2px solid red; */
+    /* border: 10px solid red; */
+    /* margin-bottom: 3vh; */
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    /* border: 5px solid black; */
+}
+.fkeyName{
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    font-weight: 300;
+    font-size: 1.6vw;
+    /* margin-right: 5vw; */
+    margin-left: 2vw;
+    /* margin-left: 2vw; */
+    width: 13vw;
+    
+    font-family: 'Cabin', sans-serif;
+}
+.fvalueName{
+    /* padding-top: 0vh; */
+    /* padding-bottom: 7vh; */
+    font-size: 2.5vw;
+    width: 100vw;
+    /* background-color: red; */
+    overflow: visible;
+    white-space: break-spaces;
+    font-family: 'Cabin', sans-serif;
+    /* margin-right: 5vw; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.fTvalue{
+    /* font-weight: 600; */
+    /* font-size: 1.1rem; */
+    font-size: 1.2rem;
+    width: 24vw;
+    font-family: 'Cabin', sans-serif;
+    padding-left: 3rem;
+    margin-top: -2px;
+    max-height: 5.5rem;
+    overflow-y: scroll;
+}
+
+.fCSvalue{font-size: 1.2rem;
+    width: 12vw;
+    font-family: 'Cabin', sans-serif;
+}
+
+
+input[type="text"]:disabled {
+    border: none;
+}
+select:disabled {
+    color: white;
+    opacity: 1;
+    appearance: none;
+}
+select:disabled:hover{
+    cursor:default;
+}
+.Gvalue{
+    font-size: 1.2rem;
+    margin-left: 2vw;
+}
+.SG{
+    /* margin-left: 5vw; */
+    font-size: 1.2rem;
+
+} 
+
+.ftd{
+    font-size: 1.2rem;
+    padding-top: unset;
+}
+.EmptyError{
+     
+    color: rgb(252, 0, 0);
+    font-size: 1rem;
+    height: fit-content;
+    line-height: 2vh;
+    margin-left: 15vw;
+}
+.SPBdiv{
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5rem;
+    /* margin-top: 12vh; */
+}
+.SPButton{
+    background: linear-gradient(to bottom right, rgb(103,107,124), rgb(37,45, 58));
+    text-align: center;
+    width: 20%;
+    height: 4vh;
+    border: 0.12em solid white;
+    border-image: conic-gradient( rgba(201, 42, 42, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), white, white, white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), white, white, white, rgba(255, 255, 255, 0) ) 1;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.19em;
+    white-space: nowrap;
+    min-width: fit-content;
+    margin-top: 1rem;
+    font-size: small;
+}
+
+
+.head{
+    height: 106vh;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0vh;
+	justify-content: space-evenly;
+    align-items: center;
+    background-color: #3d2433;
+}
+.table {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Cabin', sans-serif;
+    width: 50vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+	background:  linear-gradient(to bottom right, rgb(102,104,134), rgb(20,20,66));
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+td {
+    padding-right: 6.6vw;
+    padding-top: 1.7vh;
+}
+.keys{
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.keyName{
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.valueName{
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+    font-size: 1.6rem;
+}
+.editButton{
+background: linear-gradient(to  bottom right, rgb(103,107,124), rgb(37,45, 58));
+  text-align: center;
+  width: 25%;
+  border: none;
+  cursor: pointer;
+  position: relative;
+    margin-top: 11vh;
+}
+@media (max-width:1392px){
+    .fNameR{
+        
+        width: 35vw;
+        
+    }
+    .fvalueName{
+       
+        font-size: 2.5vw;
+        width: 110vw;
+        
+    }
+    .image1{
+  
+        /* height: 95%; */
+        width: 90%;
+          position: relative;
+          top: 25%;
+          left: 16%;
+           
+          transition:cubic-bezier(0.19, 1, 0.22, 1);
+        
+        }
+}
+ 
+@media (max-width:1250px){
+     
+      .image1{
+  
+        /* height: 95%; */
+        width: 90%;
+          position: relative;
+          top: 25%;
+          left: 16%;
+           
+          transition:cubic-bezier(0.19, 1, 0.22, 1);
+        
+        }
+
+        .fTvalue{
+            padding-left: 1.6rem;
+            width: 20vw;
+        }
+        
+}
+@media (max-width:1077px){
+.fNameR{
+        
+    width: 40vw;
+    
+}
+.IForm{
+    margin-left: 0px;;
+}
+.fvalueName{
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+    font-size: 2.5vw;
+    width: 160vw;
+    
+}
+.Row{
+    display: inline-flex;
+    flex-direction: row;
+    height: 8vh;
+    width: 42vw;
+    align-items: flex-end;
+
+    
+    /* align-items: flex-start; */
+}
+.GRow{
+    display: inline-flex;
+    flex-direction: row;
+    height: 8vh;
+    width: 42vw;
+    align-items: flex-end;
+
+}
+.ERow{
+    display: inline-flex;
+    flex-direction: row;
+    height: 8vh;
+    width: 42vw;
+    align-items: flex-start;
+} 
+.fvalue {
+    width: 28vw;
+  
+}
+.fCSvalue1{
+    
+   
+   width: 8vw;
+  
+}
+.fCSvalue2{
+ 
+  width: 12vw;
+ 
+}
+.OG{
+   width: 28vw;
+   
+
+}
+.SG{
+ 
+   width: 28vw;
+  
+}
+.fEvalue{
+ 
+   /* font-weight: 600; */
+   /* font-size: 1.1rem; */
+   margin-left: 10px;
+   font-size: 1.2rem;
+   width: 23vw;
+   text-align: left;
+}
+
+.SG{
+   align-items: center;
+
+}
+   .imgDiv
+   {
+     height: 106vh;
+     width:50%;
+     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('./Images/sidebg.png');
+    position: relative;
+    /* left: -27px; */
+    left: -3.5vw;
+   }
+}
+@media only screen and (max-width: 958px) {
+    .head{
+        margin-top: -8vh;
+    }
+    .IForm{
+        margin-left: 25px;
+        width: 55vw;
+    }
+
+    .SPButton{
+        display: flex;
+        /* width: 100%; */
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 6rem;
+        /* margin-top: 12vh; */
+    }
+    
+.table{
+    width: 60vw;
+    font-size: .8rem;
+}
+.keyName{
+    font-size: 1.1rem;
+}
+.valueName{
+    font-size: 1.1rem;
+}
+.keys{
+    font-size: .8rem;
+}
+.imgDiv
+  {
+    display: none;
+    height: 40%;
+    width:auto;
+    color: white;
+    /* background-image: url('./Images/bg.svg'); */
+    position: absolute;
+    top: 65%;
+    /* background-size: cover; */
+    background-repeat: none;
+    background-image: url('./Images/sidebg.png');
+  }
+  .image1{
+    
+    /* height: 86%; */
+    width: 27%;
+      position: relative;
+      top: 10%;
+      left: 14%;
+       
+    }
+     
+    .fNameR{
+        
+        width: 60vw;
+        
+    }
+    .fvalueName{
+       
+        font-size: 2.5vw;
+        width: 110vw;
+        
+    }
+    .Row{
+        display: inline-flex;
+        flex-direction: row;
+        height: 5.5vh;
+        width: 60vw;
+        align-items: flex-end;
+    
+        
+        /* align-items: flex-start; */
+    }
+    .GRow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 5.5vh;
+        width: 60vw;
+        align-items: flex-end;
+    
+    }
+    .ERow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 5.5vh;
+        width: 60vw;
+        align-items: flex-start;
+    }
+    .fkey{
+        /* font-weight: 600;
+        font-size: 1.1rem; */
+        font-weight: 499;
+        font-size: 1.17rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 22vw;
+       
+        text-align: end;
+        
+    }
+    .Gkey{
+     /* font-weight: 600;
+        font-size: 1.1rem; */
+        font-weight: 499;
+        font-size: 1.17rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 22vw;
+       
+        text-align: end;
+    }
+    .fvalue {
+       
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 1.2rem;
+        width: 38vw;
+        text-align: left;
+    }
+    .fCSvalue1{
+        
+         /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 1.2rem;
+        width: 18vw;
+        text-align: left;
+    }
+    .fCSvalue2{
+        
+        /* font-weight: 600; */
+       /* font-size: 1.1rem; */
+       
+       font-size: 1.2rem;
+       width: 18vw;
+       text-align: left;
+    }
+    .OG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 1.2rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .SG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 1.2rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .fEvalue{
+      
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 1.2rem;
+        width: 38vw;
+        text-align: left;
+    }
+    
+    .SG{
+        align-items: center;
+    
+    }
+
+    .fTvalue{
+        padding-left: 1.5rem;
+        width: 40vw;
+    }
+    
+}
+@media (max-width:750px) {
+    .head{
+        margin-top: -6vh;
+    }
+    .image1{
+      width: 32%;
+      
+      position: relative;
+      top: 6%;
+      left: 16%;
+
+    }
+    .imgDiv{
+        width: 103.59%;
+    }
+    .fNameR{
+        
+        width: 60vw;
+        
+    }
+    .fvalueName{
+        padding-top: 5vh;
+        padding-bottom: 1vh;
+        font-size: 3.3vw;
+        width: 190vw;
+        
+    }
+    .Row{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.8vh;
+        width: 60vw;
+        align-items: flex-end;
+    
+        
+        /* align-items: flex-start; */
+    }
+    .GRow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.8vh;
+        width: 60vw;
+        align-items: flex-end;
+    
+    }
+    .ERow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.8vh;
+        width: 60vw;
+        align-items: flex-start;
+    }
+    .fkey{
+        /* font-weight: 600;
+        font-size: 1.1rem; */
+        
+       
+        font-weight: 500;
+        font-size: 1rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 22vw;
+       
+        text-align: end;
+        
+    }
+    .Gkey{
+     /* font-weight: 600;
+        font-size: 1.1rem; */
+        font-weight: 500;
+        font-size: 1rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 22vw;
+       
+        text-align: end;
+    }
+    .fvalue {
+       
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.9rem;
+        width: 40vw;
+        text-align: left;
+    }
+    .fCSvalue1{
+        
+         /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.9rem;
+        width: 18vw;
+        text-align: left;
+    }
+    .fCSvalue2{
+        
+        /* font-weight: 600; */
+       /* font-size: 1.1rem; */
+       
+       font-size: 0.9rem;
+       width: 18vw;
+       text-align: left;
+    }
+    .OG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.9rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .SG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.9rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .fEvalue{
+      
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.9rem;
+        width: 38vw;
+        text-align: left;
+    }
+    
+    .SG{
+        align-items: center;
+    
+    }
+    .fTvalue{
+        padding-left: 1.2rem;
+        width: 50vw;
+        font-size: small ;
+        overflow-y: scroll;
+        max-height: 5.5rem;
+    }
+   }
+   @media (max-width:569px) {
+    .head{
+        height: 115vh;
+        margin-top: -11vh;
+    }
+    .IForm{
+        margin-left: -10px;
+        width: 55vw;
+    }
+    .image1{
+      width: 47%;
+      position: relative;
+      top: 5%;
+      left: 16%;
+
+    }
+    .imgDiv{
+        width: auto;
+        height: 40%;
+        
+    }
+    .fNameR{
+        
+        width: 60vw;
+        
+    }
+    .fvalueName{
+        padding-top: 5vh;
+        padding-bottom: 1vh;
+        font-size: 3.3vw;
+        width: 190vw;
+        
+    }
+    .Row{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.7vh;
+        width: 75vw;
+        
+        align-items: flex-end;
+    
+        
+        /* align-items: flex-start; */
+    }
+    .GRow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.7vh;
+        width: 75vw;
+        align-items: flex-end;
+    
+    }
+    .ERow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.7vh;
+        width: 75vw;
+       
+        align-items: flex-start;
+    }
+    .fkey{
+        /* font-weight: 600;
+        font-size: 1.1rem; */
+        
+       
+        font-weight: 500;
+        font-size: 0.8rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 25vw;
+       white-space: nowrap;
+        text-align: end;
+        
+    }
+    .Gkey{
+     /* font-weight: 600;
+        font-size: 1.1rem; */
+        font-weight: 500;
+        font-size: 0.8rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 25vw;
+       
+        text-align: end;
+    }
+    .fvalue {
+       
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 45vw;
+        text-align: left;
+    }
+    .fCSvalue1{
+        
+         /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 19vw;
+        text-align: left;
+    }
+    .fCSvalue2{
+        
+        /* font-weight: 600; */
+       /* font-size: 1.1rem; */
+       
+       font-size: 0.8rem;
+       width: 25vw;
+       text-align: left;
+    }
+    .OG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .SG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .fEvalue{
+      
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 38vw;
+        text-align: left;
+    }
+    
+    .SG{
+        align-items: center;
+    
+    }
+
+    .fTvalue{
+        padding-left: 1.2rem;
+        width: 50vw;
+    }
+   }
+
+   @media (max-width:485px) {
+    .head{
+        height: 112vh;
+        margin-top: -10vh;
+    }
+    .IForm{
+        /* margin-left: -25px; */
+        width: 60vw;
+    }
+    .image1{
+      width: 47%;
+      position: relative;
+      top: 5%;
+      left: 16%;
+
+    }
+    .imgDiv{
+        width: auto;
+        height: 40%;
+        
+    }
+    .fNameR{
+        
+        width: 60vw;
+        
+    }
+    .fvalueName{
+        padding-top: 5vh;
+        padding-bottom: 1vh;
+        font-size: 3.5vw;
+        width: 190vw;
+        
+    }
+    .Row{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.7vh;
+        width: 80vw;
+      
+        align-items: flex-end;
+    
+        
+        /* align-items: flex-start; */
+    }
+    .GRow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.7vh;
+        width: 80vw;
+        align-items: flex-end;
+    
+    }
+    .ERow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.7vh;
+        width: 80vw;
+        
+        align-items: flex-start;
+    }
+    .fkey{
+        /* font-weight: 600;
+        font-size: 1.1rem; */
+        
+       
+        font-weight: 500;
+        font-size: 0.8rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 25vw;
+       
+        text-align: end;
+        
+    }
+    .Gkey{
+     /* font-weight: 600;
+        font-size: 1.1rem; */
+        font-weight: 500;
+        font-size: 0.8rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 25vw;
+       
+        text-align: end;
+    }
+    .fvalue {
+       
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 50vw;
+        text-align: left;
+    }
+    .fCSvalue1{
+        
+         /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 22vw;
+        text-align: left;
+    }
+    .fCSvalue2{
+        
+        /* font-weight: 600; */
+       /* font-size: 1.1rem; */
+       
+       font-size: 0.8rem;
+       width: 25vw;
+       text-align: left;
+    }
+    .OG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .SG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .fEvalue{
+      
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.8rem;
+        width: 38vw;
+        text-align: left;
+    }
+    .fTvalue{
+        padding-left: 1rem;
+    }
+    
+    .SG{
+        align-items: center;
+    
+    }
+   }
+   
+   @media (max-width:380px) {
+    .head{
+        height: 118vh;
+        margin-top: -12vh;
+    }
+    .IForm{
+        /* margin-left: 25px; */
+        width: 50vw;
+    }
+    .image1{
+      width: 47%;
+      position: relative;
+      top: 5%;
+      left: 16%;
+
+    }
+    .imgDiv{
+        width: auto;
+        height: 40%;
+        
+    }
+    .fNameR{
+        
+        width: 60vw;
+        
+    }
+    .fvalueName{
+        padding-top: 4vh;
+        padding-bottom: 1vh;
+        font-size: 3.5vw;
+        width: 190vw;
+        
+    }
+    .Row{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.5vh;
+        width: 75vw;
+        align-items: flex-end;
+    
+        
+        /* align-items: flex-start; */
+    }
+    .GRow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.5vh;
+        width: 75vw;
+        align-items: flex-end;
+    
+    }
+    .ERow{
+        display: inline-flex;
+        flex-direction: row;
+        height: 4.5vh;
+        width: 75vw;
+        align-items: flex-start;
+    }
+
+    .fTvalue{
+        padding-left: 1rem;
+    }
+    .fkey{
+        /* font-weight: 600;
+        font-size: 1.1rem; */
+        
+       
+        font-weight: 500;
+        font-size: 0.6rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 24vw;
+       
+        text-align: end;
+        
+    }
+    .Gkey{
+     /* font-weight: 600;
+        font-size: 1.1rem; */
+        font-weight: 500;
+        font-size: 0.6rem;
+        /* margin-right: 5vw; */
+        /* margin-left: 2vw; */
+        width: 24vw;
+       
+        text-align: end;
+    }
+    .fvalue {
+       
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.6rem;
+        width: 38vw;
+        text-align: left;
+    }
+    .fCSvalue1{
+        
+         /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.6rem;
+        width: 20vw;
+        text-align: left;
+    }
+    .fCSvalue2{
+        
+        /* font-weight: 600; */
+       /* font-size: 1.1rem; */
+       
+       font-size: 0.6rem;
+       width: 25vw;
+       text-align: left;
+    }
+    .OG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.6rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .SG{
+        
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.6rem;
+        width: 38vw;
+        text-align: left;
+    
+    }
+    .fEvalue{
+      
+        /* font-weight: 600; */
+        /* font-size: 1.1rem; */
+        margin-left: 10px;
+        font-size: 0.6rem;
+        width: 38vw;
+        text-align: left;
+    }
+    
+    .SG{
+        align-items: center;
+    
+    }
+   }
+/* @media only screen and (max-width: 425px) {
+    .image1{
+  
+       
+        width: 65%;
+          position: relative;
+          top: 2vh;
+          left: 2%;
+           
+        }
+    .head {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 0vh;
+    height: 97vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0vh;
+}
+
+.form{
+    height: unset;
+}
+.ftag{
+    height: fit-content;
+    
+}
+.IForm{
+    
+    width: 100vw;
+    margin-top: 3vh;
+    margin-left: 0vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.Row{
+    width: 85vw;
+    margin-left: 0vw;
+    height: 4vh;
+}
+
+.fNameR{
+    width: 85vw;
+    margin-bottom: 0vh;
+}
+.ERow{
+    margin-top: 1.4vh;
+    width: 85vw;
+    margin-left: 0vw;
+}
+.EmptyError{
+    height: unset;
+}
+
+.fkeyName{
+    margin-left: 0vw;
+    font-size: 1rem;
+    width: 31vw;
+}
+.fvalueName{
+    font-size: 1rem;
+    width: 54vw;
+}
+.fkey{
+    
+    font-size: .7rem;
+    
+    width: 31vw;
+    
+}
+.fvalue{
+    font-size: .7rem;
+    width: 54vw;
+}
+
+.fEvalue{
+    font-size: .7rem;
+    width: 54vw;
+}
+.fCSvalue{font-size: .7rem;
+    width: 27vw;
+}
+.GRow{
+   
+    width: 85vw;
+  
+    height: 4vh;
+    align-items: flex-end;
+}
+
+.Gkey{
+    font-size: .7rem;
+ 
+    margin-left: 0vw;
+    width: 31vw;
+}
+.Gvalue{
+    font-size: .7rem;
+    margin-left: 0vw;
+}
+.SG{
+    font-size: .7rem;
+} 
+.OG{
+  
+    font-size: .7rem;
+
+}
+.fTvalue{
+    font-size: .7rem;
+    width: 54vw;
+} 
+.ftd{
+    font-size: .7rem;
+ 
+}
+.EmptyError{
+    font-size: .7rem;
+}
+.SPBdiv{
+   margin-bottom: 2vh;
+}
+.SPButton{
+    font-size: .8em;
+}
+
+.table{
+    margin-top: 0vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+     height: fit-content;
+    font-size: .61rem;
+    padding-left: 0vw;
+}
+
+.td {
+    padding-right: 6.6vw;
+    padding-top: .8vh;
+}
+.keys{
+    font-weight: 50;
+    font-size: .65rem;
+}
+.keyName{
+    padding-top: 7vh;
+    padding-bottom: 0vh;
+    font-weight: 100;
+    font-size: 1rem;
+}
+.valueName{
+    padding-top: 7vh;
+    padding-bottom: 0vh;
+    font-size: 1rem;
+}
+.imgDiv{
+    width: 100vw;
+    height: 54vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000853;
+}
+.image1{
+    width: 100vw;
+    height: 54vh;
+    margin-top: 0vh;
+}
+.editButton{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+} */

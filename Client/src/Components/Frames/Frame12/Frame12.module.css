@@ -1,0 +1,45 @@
+.container {
+  --left-width: 60.7%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.0168);
+  top: -21.9%;
+  left: 0.384%;
+  display: flex;
+}
+
+.left,
+.right {
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.left {
+  width: var(--left-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #392d76; */
+}
+
+.right {
+  width: calc(100% - var(--left-width));
+  background-color: #221270;
+  --window-height: 40%;
+}
+
+.window1 {
+  height: var(--window-height);
+  width: 75%;
+  top: 5em;
+  right: 0;
+}
+
+.window2 {
+  height: var(--window-height);
+  width: 85%;
+  bottom: 0;
+}

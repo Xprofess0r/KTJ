@@ -1,0 +1,444 @@
+ * 
+{
+  margin: 0;
+  padding: 0;
+}
+.rightdiv
+{
+  
+  height: 100vh;
+  width:50%;
+  color: white;
+  background-image: url('./Images/bg.svg');
+  background-image: url('./Images/sidebg.png');
+  background-size: cover;
+  background-repeat: none;
+  
+
+}
+.emailcontainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  /* background-color: red; */
+}
+.emailicondiv{
+  border: 4px solid #dfc8c886;
+  border-radius: 0.3rem;
+  width: 3.9vw;
+  height: 7.2vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+ 
+}
+.emailicon{
+ 
+  width: 1.7rem;
+  height:1.7rem;
+  
+}
+.passcontainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  /* background-color: red; */
+}
+.passicondiv{
+  border: 4px solid #dfc8c886;
+  border-radius: 0.3rem;
+  width: 3.9vw;
+  height: 7.2vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+ 
+}
+.passicon{
+ 
+  width: 1.7rem;
+  height:1.7rem;
+  
+}
+.astronaut{
+  
+  height: 75%;
+  width: 65%;
+    position: relative;
+    top: 9vh;
+    left: 42%;
+     
+    transition:cubic-bezier(0.19, 1, 0.22, 1);
+  
+  }
+  .satellite
+  {
+     
+   
+   width: 50%;
+    position: absolute;
+    top: 8vh;
+    height: 92vh;
+  }
+  
+.leftdiv{
+    position: absolute;
+    left: 50%;
+    height: 100vh;
+  width:50%; 
+background-image: url('./Images/bg2.png');
+ 
+}
+ 
+.signinmodal
+{
+  margin-top: 20vh;
+  margin-left: 15vh;
+  color: #CD8786;
+  font-family: 'Solomon Sans Med';
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+ 
+ 
+}
+ 
+.textbox{
+  background-color: #3B2231;
+  width: 30vw;
+  height: 7.5vh;
+  font-size: 30px;
+  border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem;
+  margin-top: -0.3vh;
+  margin-bottom: 2vh;
+  padding-left: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+}
+.forgotpassword{
+  display: block;
+  text-align: right;
+  margin-right: 10vw;
+  margin-top: 2vh;
+  font-size: 25px;
+  color:#CD8786;
+}
+.signintext{
+  text-align: center;
+  margin-right: 8vw;
+  margin-top: 3.5rem;
+  height: 6vh;
+}
+.googlelogo
+{
+  font-weight: 900;
+  
+}
+.signinbtn{
+  height:7.5vh;
+  width:30vh;
+   
+  margin-right: 4vw;
+  margin-top: 6vh;
+  font-size: 20px;
+  margin-bottom: -2vh;
+  background-color: inherit;
+  color: white;
+  border-color:#CD8786;
+  border-width: 2px;
+  border-radius: 0.5rem;
+  
+ 
+}
+.signinbtn:hover{
+  cursor: pointer;
+  height:6.9vh;
+  width:30vh;
+  font-size: 20px;
+  background-color: #CD8786;
+  color: black;
+  border-color:#CD8786;
+  border-width: 2px;
+  border-radius: 0.5rem;
+  
+  border-left-width: 7px;
+  border-left-color: rgb(290,144,145);
+  border-bottom-width: 7px;
+  border-bottom-color: #E49090;
+}
+.signinlink{
+  color:#CD8786;
+}
+
+ 
+@media (max-width:1118px){
+    .signinbtn{
+        height:7vh;
+        width:30vh;
+        margin-left: 0vw;
+        margin-top: 5vh;
+         
+      }
+      .sign{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .textbox{
+        width: 28vw;
+        height: 7.2vh;
+        font-size: 28px;
+        border-width: 3.5px;
+        margin-top: 2vh;  
+      }
+      .emailicondiv{ 
+        margin-top: 1.12rem;
+      }
+
+      .passicondiv{
+        margin-top: 1.12rem;
+      }
+      .emailicondiv{
+ 
+        width: 4.9vw;
+       
+      }
+      .passicondiv{
+        width:4.9vw
+      }
+       
+
+}
+ @media (max-width:850px) {
+  
+    .rightdiv
+{
+  
+  height: 37.99vh;
+  width:100%;
+  color: white;
+  /* background-image: url('./Images/bg.svg'); */
+  position: absolute;
+  top: 62%;
+  background-size: cover;
+  background-repeat: none;
+}
+.astronaut{
+  
+  height: 86%;
+  width: 35%;
+    position: relative;
+    top: 5vh;
+    left: 8%;
+     
+  }
+  .satellite{
+   width: 100%;
+    position: absolute;
+    height: 38vh;
+    top: 0vh;
+  }
+   
+.leftdiv{ 
+    position: absolute;
+    left: 0%;
+    top: 9.5%;
+    height: 70vh;
+  width:100%; 
+background-image: url('./Images/bg2.png');
+}
+ 
+.signinmodal{
+  margin-top: 0vh;
+  margin-left: 0vh;
+  color: #CD8786;
+  font-family: 'Solomon Sans Med';
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+ align-items: center;
+ 
+} 
+.passicondiv{
+  border: 4px solid #dfc8c886;
+  border-radius: 0.3rem;
+  width: 5.9vw;
+  height: 6.3vh;
+  
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+ 
+}
+.emailicondiv{
+  border: 4px solid #dfc8c886;
+  border-radius: 0.3rem;
+  width: 5.9vw;
+  height: 6.3vh;
+  
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+ 
+}
+.emailcontainer{
+  
+  margin: 1;
+} 
+.passcontainer{
+ 
+  margin: 0;
+}
+.textbox{
+  background-color: #3B2231;
+  width: 50vw;
+  height: 6.3vh;
+  font-size: 20px;
+  border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem;
+  margin-top: 18px;
+  margin-bottom: 0vh;
+  padding-left: 20px;
+  align-items: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+   /* z-index: 100; */
+ 
+}
+/* .rightdiv img{
+    z-index: 50;
+} */
+.signinmodal h1{
+  
+    text-align: center;
+    font-size: 30px;
+}
+.forgotpassword{
+  display: block;
+  text-align: right;
+  margin-right: 22vw;
+  margin-top: 2.8vh;
+  font-size: 2.4vw;
+  color:#CD8786;
+}
+.signintext{
+  text-align: center;
+  margin-right: 6vw;
+  margin-top:1.4rem;
+  height: 6vh;
+  /* background-color: red; */
+  font-size: 1.15rem;
+
+}
+.googlelogo
+{
+  font-weight: 900;
+}
+ .sign{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+.signinbtn{
+  height:6.8vh;
+  width:24vw;
+  /* margin-left: 13vh; */
+  margin-top: 3.4vh;
+  font-size: 3vw;
+  margin-bottom: -2vh;
+  background-color: inherit;
+  color: white;
+  border-color:#CD8786;
+  border-width: 2.7px;
+  border-radius: 0.6rem;
+
+}
+ 
+.signinbtn:hover{
+  cursor: pointer;
+  height:7vh;
+  width:28vh;
+   
+  margin-top: 4vh;
+  font-size: 20px;
+  background-color: #CD8786;
+  color: black;
+  border-color:#CD8786;
+  border-width: 2px;
+  border-radius: 0.5rem;
+ 
+  border-left-width: 7px;
+  border-left-color: rgb(290,144,145);
+  border-bottom-width: 7px;
+  border-bottom-color: #E49090;
+  
+}
+.signinlink{
+  color:#CD8786;
+}
+
+
+ }
+ 
+ @media (max-width:403px) {
+    .astronaut{
+  
+        height: 95%;
+        width: 45%;
+          position: relative;
+          top: 2vh;
+          left: -5%;
+           
+        }
+        .textbox{
+            background-color: #3B2231;
+            width: 65vw;
+            height: 6.2vh;
+            font-size: 15px;
+            margin-top: 18px;
+           
+          }
+          .signinbtn{
+            height:6.5vh;
+            width:30vw;
+            margin-top: 2vh;
+            font-size: 3.4vw;
+          }
+          .forgotpassword{
+            margin-right: 13vw;
+            
+          }
+          .emailcontainer{
+            display: flex;
+            flex-direction: row;
+            margin-top: 1.2rem;
+            /* background-color: red; */
+          }
+          .passcontainer{
+            margin-top: 1rem;
+          }
+    
+ }

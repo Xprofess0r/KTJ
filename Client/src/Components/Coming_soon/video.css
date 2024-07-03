@@ -1,0 +1,14 @@
+.bgvideo {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    opacity: 1;
+    margin-bottom: -2rem;
+  }
+  .bgvideo_content {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -2rem;
+  }

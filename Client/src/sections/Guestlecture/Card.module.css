@@ -1,0 +1,364 @@
+.CardContainer {
+    display: flex;
+    font-size: 2rem;
+    border-radius: 1rem;
+    width: max-content;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    padding: 2rem 2rem;
+    backdrop-filter: blur(10px) saturate(140%);
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    background-color: rgba(120, 246, 255, 0.197);
+    border: 3px inset rgb(209, 213, 219);
+    box-shadow: 2px 2px 20px 7px rgba(92, 255, 255, 0.789);
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    display: none;
+    scrollbar-width: 0;
+}
+
+.cardDiv {
+  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.imgC img {
+    /* top: 5vh; */
+    max-width: 100%;
+    /* height: 27vh; */
+    max-height: 100%;
+    background-color: rgba(140, 152, 162, 0.723);
+    /* margin:0 0 0 0; */
+    margin: auto;;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: block;
+    transition: all 1s ease;
+    object-fit: contain;
+}
+.imgC{
+    /* top: 5vh; */
+    position: relative;
+    /* margin: 2vh 0 3vh 0; */
+   height: 51vh;
+   display: block;
+   perspective: 100px;
+   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.descGL{
+    color: white;
+    opacity: 0;
+    position:absolute;
+    top:0vh;
+    margin-top:0.1rem;
+    align-self: center;
+    /* padding: 2vh; */
+    /* width: 23vw; */
+    width: 100%;
+    
+    height: 40vh;
+    max-height: 335px;
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    /*text-align:justify;*/
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+ /* word-break:keep-all;*/
+}
+
+.btnReg{
+   position: absolute;
+    transition: opacity .35s ease;
+    text-align: center;
+    width: max-content;
+    opacity: 0;
+    border:none;
+    /* border-radius: 8px; */
+    background-color: rgb(0, 74, 127);
+    padding:0.5vh 1vw;
+    font-size: 1.5rem;
+    color: rgb(226, 251, 255);
+    bottom: 0vh;
+    left: 50%;
+    /* margin: auto; */
+    transform-origin: right;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-60%, -50%);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    perspective: 100px;
+    box-shadow: 0 0 5px 1px rgb(224, 255, 255);
+    transition: all 0.5s ease;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+
+}
+.imgC:hover .cardDiv img{
+    opacity: 0.4;
+    /* filter: blur(20px); */
+    transition: all 0.5s ease;
+}
+
+.btnReg:hover {
+    /* font-weight:600; */
+    color:rgb(7, 119, 136);
+    left: 50%;
+    /* margin: auto; */
+  -ms-transform: translate(-50%, -50%) rotateY(4deg);
+    background-color: rgb(229, 210, 255);
+    border: none;
+    /* border-radius: 0; */
+    outline: 1px solid rgb(181, 255, 249);
+    outline-offset: 0.4rem;
+    /* transition-delay: 0.5s; */
+    transition: all 0.5s ease;  transform: translate(-50%, -50%) rotateY(4deg);
+  box-shadow: -15px 0 15px #00a8ff;
+}
+
+.reg{
+    transform: rotateX(-5deg);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+
+ }
+
+.btnJoin {
+    position: absolute;
+    transition: opacity .35s ease;
+    text-align: center;
+    width: max-content;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border:none;
+    border-radius: 8px;
+    background-color: rgb(63, 65, 65);
+    padding:0.5vh 1vw;
+    font-size: 1.5rem;
+    color: white;
+    bottom: 0.5vh;
+    left:18vw;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btnJoin:hover {
+    color:black;
+    background-color: white;
+    border: none;
+    /* transition-delay: 0.5s; */
+    transition: all 0.5s ease;
+}
+
+.imgC:hover img{
+    /* visibility: hidden; */
+    /* background-color: black; */
+    background-image: rgba(14, 238, 223, 0.263); 
+    filter: blur(5px) opacity(50%); 
+    transition: all 1s ease;
+    box-shadow: rgba(48, 157, 5, 0.35) 3px 30px 60px -12px, rgba(11, 150, 39, 0.35) 3px 18px 36px -18px;
+}
+.imgC:hover button{
+    
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.imgC:hover .descGL{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+
+.cardDiv p {
+    margin: 0;
+    padding-top: 0vh;
+    text-align: center;
+    font-size: 2.2rem;
+    width: 23vw;
+    word-wrap: break-word;
+    position: relative;
+    bottom: 0;
+    height:5vh;
+}
+@media screen and (max-width:1280px) and (max-height:800px) {
+    .descGL{
+        height:36vh;
+        top:1vh;
+        font-size: 1.2rem;
+    }
+    .btnJoin,.btnReg{
+        bottom: 0.8vh;
+        padding: 0vh 1vh;
+    }
+}
+@media  screen and (max-width:920px) {
+
+
+    .CardContainer{
+        display: flex;
+        flex-direction: column;
+        /* width: min(30rem, 100vw - 4rem); */
+        margin-bottom: 2rem;
+    }
+    .cardDiv {
+        /* display: flex; */
+        /* flex-direction: row; */
+        margin: auto;
+        height: fit-content;
+        /* margin-top: 20rem; */
+    }
+    .descGL{
+      /* left:2.5vw; */
+        width:100%;
+        height:85%;
+        padding-top: 0;
+        overflow: hidden;
+        overflow-y: scroll;
+        line-height: 1.7rem;
+        font-size: 1rem;
+    }
+    .btnJoin{
+        font-size: 1.2rem;
+        bottom: -2.6vh;
+        left:32vw;
+        padding:0vh 1.5vw;
+    }
+    .btnReg {
+        left:14vw;
+        font-size: 1.2rem;
+      bottom: -1.8vh;
+      padding:0vh 1.5vw;
+      left: 50%;
+    }
+    .imgC{
+        height: fit-content;
+        /* top: 5vh; */
+    }
+    .imgC img {
+        width:40vw;
+        height: fit-content;
+        /* margin: 2vh; */
+        margin: auto;
+    }
+    .cardDiv p {
+        font-size: 1.5rem;
+        width:30vw;
+        position: relative;
+        word-wrap: break-word;
+        vertical-align: middle;
+        top:10vh;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .CardContainer {
+        width: fit-content;
+        height: fit-content;
+    }
+    .btnJoin{
+        /* font-size: 0.9rem; */
+        padding: 0vh 1.5vw;
+       left:34vw;
+       bottom: 0;
+    }
+    .btnReg{
+        /* font-size: 0.9rem; */
+        /* padding: 0vh 1.5vw; */
+        margin: auto;
+        /* left:15vw; */
+        /* bottom: 2vh; */
+    }
+    .descGL{
+        width:100%;
+        /* left:2.1vw; */
+        height:14.5vh;
+       /* font-size: 0.8rem; */
+       line-height: 1.2rem;
+    }
+    .imgC{
+        height: 40vh;
+        /* top: 5vh; */
+    }
+    .imgC img {
+        width: fit-content;
+    }
+}
+@media screen and (max-width:420px) {
+    .imgC {
+        height: 30vh;
+    }
+    .descGL{
+        height:15vh;
+        /* left:3vw; */
+    }
+    .btnJoin,.btnReg{
+        bottom:2vh;
+    }
+    .btnReg {
+      /* left:14vw; */
+    }
+    .btnJoin{
+        left:35vw;
+    }
+}
+@media screen and (max-width:376px) {
+    .cardDiv p {
+        font-size: 1rem;
+    }
+    .btnJoin{
+        font-size: 0.7rem;
+        left:36vw;
+        bottom: 0.5vh;
+        border-radius: 5px;
+    }
+    .btnReg{
+        font-size: 0.7rem;
+        /* left:15vw;  */
+        bottom: 1.5vh;
+        margin: auto;
+        border-radius: 5px;
+    }
+    .descGL{
+    align-self: center;
+    }
+
+    .imgC img {
+        width: 100%;
+        margin: auto;
+    }
+    .imgC {
+        /* width: 80%; */
+    }
+    .CardContainer {
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width:250px){
+    .descGL{
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        
+        width:45vw;
+    }
+    .btnJoin,.btnReg{
+        font-size: 0.6rem;
+    }
+    .btnReg{
+        left:15vw;
+        bottom:1.5vh;
+    }
+    .btnJoin{
+        left:38vw;
+    }
+}

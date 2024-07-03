@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+.Table {
+  /* margin-top: -85vh; */
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+div.ant-table-wrapper {
+  padding: 0px !important;
+}
+th {
+  font-weight: bold;
+  color: #eb4448;
+  border: none !important;
+  border-bottom: 2px solid rgb(67, 148, 121) !important;
+  background-color: transparent !important;
+}
+td {
+  background-color: transparent !important;
+}
+tr:has(th) {
+  border: 2px solid rgb(67, 148, 121) !important;
+}

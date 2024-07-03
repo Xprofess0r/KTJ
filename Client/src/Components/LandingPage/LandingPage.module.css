@@ -1,0 +1,225 @@
+.landing_image {
+    background: url("https://github.com/KSHITIJ-2022/media/blob/master/images/landing-centred.gif?raw=true");
+    height: 100%;
+    width: auto;
+    /* Center and scale the image nicely */
+    background-color: #010028;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    font-size: 14px !important;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Orbitron&display=swap');
+  
+  @font-face {
+    font-family: "Digital-7";
+    src: url("../../fonts/digital-7.ttf") format("truetype");
+  }
+  /* @font-face {
+    font-family: "Orbitron-VariableFont_wght";
+    src: url("../../fonts/Orbitron-VariableFont_wght.ttf") format("truetype");
+  } */
+  
+  .enter_ktj_button,
+  .register_button {
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    /* font-size: 2.2rem; */
+  }
+  .register_button {
+    color: transparent;
+    margin: 0;
+    font-size: 2.2vw;
+  }
+  .enter_ktj_button {
+    font-family: "Digital-7";
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    line-height: 3vw;
+    text-shadow: 0px 0px 23px rgba(40, 252, 250, 1);
+  }
+  
+  .Timer_div {
+    position: absolute;
+    top: 56%;
+    left: 55%;
+    font-size: 1.5rem;
+    font-family: "Digital-7";
+  }
+  .btn_register_div {
+    position: absolute;
+    top: 66%;
+    left: 40.5vw;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .btn_enterktj_div {
+    position: absolute;
+    top: 84%;
+    left: 44vw;
+  }
+  
+  .landing_page_text {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 42.3vw;
+    font-family: 'Orbitron', sans-serif;
+    font-size:600;
+    font-size: 14px !important;
+    text-shadow: 0px 0px 23px rgba(40, 252, 250, 1);
+  }
+  .days_text {
+    font-size: 3vw;
+    color: white;
+    margin: 0;
+  }
+  .days_to_text {
+    font-size: 2vw;
+    color: white;
+  }
+  .video {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .landing_page_text {
+      top: 26%;
+    }
+    .btn_register_div{
+      top:68%;
+    }
+  }
+  @media (max-width: 900px) {
+    .landing_page_text {
+      top: 28%;
+    }
+    .btn_enterktj_div {
+      top: 85%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .landing_image {
+      background: url("https://github.com/KSHITIJ-2022/media/blob/master/images/landing-mobile-video.gif?raw=true");
+      height: 100%;
+      width: auto;
+      /* Center and scale the image nicely */
+      background-color: #010028;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .landing_page_text {
+      left: 42.5vw;
+  
+      top: 54%;
+    }
+    .Timer_div {
+      display: none;
+    }
+    .btn_register_div {
+      top: 81%;
+      left: 42.5vw;
+    }
+    .btn_enterktj_div {
+      top: 91%;
+      left: 43.7vw;
+    }
+    .enter_ktj_button {
+      font-size: 4vw;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .landing_page_text {
+      left: 42.5vw;
+  
+      top: 56%;
+    }
+  
+  }
+  @media screen and (max-width: 426px) {
+    .landing_page_text {
+      left: 42.5vw;
+  
+      top: 58%;
+    }
+  
+  }
+  
+  
+  /* @media screen and (max-width: 425px) {
+    .btn_enterktj_div {
+      top: 91vh;
+      left: 43.7vw;
+  
+    }
+  } */
+  
+  /* @media (max-width: 1240px) {
+  
+    .btn_register_div {
+      left: 39.5vw;
+    }
+    .enter_ktj_button {
+      font-size:2rem;  
+    }
+    .landing_page_text {
+      left: 39.5vw !important;
+    }
+  } */
+  
+  /* 
+  @media (max-width: 1024px) {
+  
+    .enter_ktj_button{
+      font-size: 2.4rem;
+    }
+    .Timer_div{
+      font-size:1.9rem;
+    }
+    .days_text{
+      font-size: 4.5rem;
+    }
+    .days_to_text{
+      font-size: 2rem;
+    }
+  } */
+  /* 
+  
+  @media (max-width: 900px) {
+    .register_button {
+      font-size: 2.3rem;
+    }
+    .enter_ktj_button {
+      font-size: 1.4rem;
+    }
+    .btn_enterktj_div {
+      left: 43.5vw;
+      top: 85vh;
+    }
+    .btn_register_div {
+      left: 37.8vw;
+    }
+    .landing_page_text {
+      left: 38vw;
+      top: 22vh;
+      font-size: 1.1rem !important;
+    }
+    .days_text {
+      font-size: 3rem;
+    }
+    .days_to_text {
+      font-size: 1.5rem;
+    }
+  } */
+  

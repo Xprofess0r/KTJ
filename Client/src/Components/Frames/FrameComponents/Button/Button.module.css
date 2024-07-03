@@ -1,0 +1,22 @@
+.Button {
+  padding: 6rem 7rem;
+  border-radius: 7rem;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  float: right;
+  margin-right: 2em;
+  border: 0.1em solid #c4b9e2;
+}
+
+.primary,
+.secondary:hover {
+  background-color: #c4b9e2;
+  color: #4d4579;
+}
+
+.secondary,
+.primary:hover {
+  background-color: transparent;
+  color: #c4b9e2;
+}

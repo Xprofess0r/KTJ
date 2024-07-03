@@ -1,0 +1,117 @@
+.bullet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+    width: 1.7rem;
+    height: 1.9rem;
+    position: relative;
+    transition: all 0.15s;
+}
+.glowBullet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+    width: 1.7rem;
+    height: 1.9rem;
+    position: relative;
+    transition: all 0.15s;
+    box-shadow: 0 0 1rem 0.1rem white;
+}
+.outerRing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100rem;
+    border-top: 0.1rem solid rgba(255, 255, 255,0.7);
+    position: absolute;
+    border-bottom: 0.3rem solid rgba(255, 255, 255,0.7);
+    transition: all 0.1s;
+}
+.glowOuterRing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100rem;
+    border-top: 0.1rem solid rgba(255, 255, 255,0.7);
+    position: absolute;
+    border-bottom: 0.3rem solid rgba(255, 255, 255,0.7);
+    transition: all 0.1s;
+    border-top: 0.1rem solid rgba(255, 255, 255);
+    border-bottom: 0.3rem solid rgba(255, 255, 255);
+}
+.bullet:hover{
+    box-shadow: 0 0 1rem 0.1rem white;
+}
+.bullet:hover>.outerRing{
+    border-top: 0.1rem solid rgba(255, 255, 255);
+    border-bottom: 0.3rem solid rgba(255, 255, 255);
+}
+.bullet:hover>.outerRing>.innerRing{
+    background-color: rgba(255, 255, 255);
+}
+
+.stext{
+    font-size: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    font-weight:500;
+    margin-left: 6rem;
+    width: 3rem;
+    text-align: right;
+    color: rgb(88, 84, 84);
+    transition:all 0.6s ease 0s;
+    /* font-family:'NeueKabel' ; */
+    border-radius: 50px;
+    /* background-color:rgba(31, 105, 170, 0.678); */
+}
+
+.bullet:hover>.stext{
+    opacity: 1;
+    visibility: visible;
+    color: white;
+    cursor: default;
+}
+
+.innerRing{
+    width: 50%;
+    height: 50%;
+    border-radius: 15rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.2s;
+}
+.glowInnerRing{
+    width: 60%;
+    height: 60%;
+    border-radius: 15rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255);
+}
+.container {
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* transform: translateY(-50%); */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* overflow-x: hidden; */
+    height: 100vh;
+    width: 4rem;
+    position: absolute;
+    z-index: 1;
+  }
+  @media only screen and (max-width: 1150px){
+    .container{
+        display: none;
+    }
+    .stext{
+        visibility: hidden;
+    }
+  }

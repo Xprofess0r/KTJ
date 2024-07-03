@@ -1,0 +1,10 @@
+.window {
+  background-color: black;
+  position: absolute;
+}
+.window video {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+  object-fit: fill;
+}

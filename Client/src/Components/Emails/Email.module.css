@@ -1,0 +1,30 @@
+.ant-list-items{
+    min-height:45vh
+}
+.ant-collapse{
+    width:100%!important;
+    background: #89fdd6;
+}
+.headerDiv{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+}
+.subjectDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    column-gap: 6em;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+    align-items:center
+}
+.rDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    column-gap: 1em;
+}

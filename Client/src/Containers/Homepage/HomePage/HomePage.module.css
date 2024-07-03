@@ -1,0 +1,644 @@
+.container {
+  position: relative;
+}
+
+.planet {
+  position: absolute;
+  width: 35vw;
+  z-index: 0;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  animation-name: gola;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all;
+
+}
+
+.meteorite {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+
+}
+
+
+.movingmeteorite {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  z-index: 0;
+  top: 50vh;
+  left: 50vw;
+  animation-name: dieAnimation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  transition: all;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.movingmeteorite2 {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  z-index: 0;
+  top: 50vh;
+  left: 50vw;
+  animation-name: dieAnimation2;
+  animation-direction: alternate-reverse;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 0.5s ease 0s;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.movingmeteorite3,
+.movingmeteorite4,
+.movingmeteorite5,
+.movingmeteorite6,
+.movingmeteorite7 {
+  height: 10vh;
+  width: 10vw;
+  z-index: 0;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.movingmeteorite3 {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  animation-name: dieAnimation3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  transition: all;
+}
+
+.movingmeteorite4 {
+  position: absolute;
+  top: 50vh;
+  left: 250vw;
+  animation-name: dieAnimation4;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition: all;
+}
+
+.movingmeteorite5 {
+  position: absolute;
+  top: 60vh;
+  left: 290vw;
+  animation-name: dieAnimation5;
+  animation-direction: alternate-reverse;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.movingmeteorite6 {
+  position: absolute;
+  top: 60vh;
+  left: 290vw;
+  animation-name: dieAnimation6;
+  /* animation-direction:alternate; */
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.movingmeteorite6 {
+  position: absolute;
+  top: 60vh;
+  left: 290vw;
+  animation-name: dieAnimation7;
+  /* animation-direction:alternate; */
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes dieAnimation {
+  0% {
+    top: 110vh;
+    left: 70vw;
+  }
+
+  100% {
+    top: -10vh;
+    left: 20vw;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dieAnimation2 {
+  0% {
+    top: 110vh;
+    left: 20vw;
+  }
+
+  100% {
+    top: -10vh;
+    left: 90vw;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dieAnimation3 {
+  0% {
+    top: 10vh;
+    left: -10vw;
+  }
+
+  100% {
+    top: 110vh;
+    left: 140vw;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dieAnimation4 {
+  0% {
+    top: 110vh;
+    left: 250vw;
+  }
+
+  100% {
+    top: -10vh;
+    left: 270vw;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dieAnimation5 {
+  0% {
+    top: 110vh;
+    left: 290vw;
+  }
+
+  100% {
+    top: -15vh;
+    left: 210vw;
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes dieAnimation6 {
+  0% {
+    top: 110vh;
+    left: 500vw;
+  }
+
+  50% {
+    top: -15vh;
+    left: 595vw;
+    transform: rotate(-450deg);
+  }
+
+  55% {
+    top: -15vh;
+    left: 505vw;
+    transform: rotate(-450deg);
+  }
+
+  100% {
+    top: 110vh;
+    left: 580vw;
+  }
+}
+
+@keyframes dieAnimation7 {
+  0% {
+    top: 110vh;
+    left: 300vw;
+  }
+
+  50% {
+    top: -15vh;
+    left: 395vw;
+    transform: rotate(-450deg);
+  }
+
+  55% {
+    top: -15vh;
+    left: 305vw;
+    transform: rotate(-450deg);
+  }
+
+  100% {
+    top: 110vh;
+    left: 380vw;
+  }
+}
+
+@keyframes dieAnimation8 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(0.9rem) rotate(9deg);
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+
+}
+
+.meteorite2 {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  z-index: 0;
+  top: 75vh;
+  left: 80vw;
+  animation-name: dieAnimation8;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+
+}
+
+.ilutimer {
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+.ilu {
+  position: absolute;
+  width: 33vw;
+  top: 35vh;
+  left: 60vw;
+  z-index: 50;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  animation-name: illufly;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all;
+
+}
+
+
+
+.livetime span {
+  background-color: blue;
+}
+
+/* .timerrimg ::before{
+  content:"";
+  background-image: url("./timing.png");
+  background-repeat: no-repeat;
+  background-size:  30rem;
+  background-position: center;
+} */
+.timer {
+  position: relative;
+  width: min-content;
+  z-index: 30;
+  top: 55vh;
+  left: 66vw;
+  font-size: 35px;
+  z-index: 50;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 6px;
+  animation: animate2 1s infinite;
+}
+@keyframes animate2 { 
+  50% {
+     color: #95d4f1;
+     text-shadow: 7px -7px 12px #5d9af6,
+     -7px 7px 12px #5b8fdd;
+  }
+}
+
+
+@keyframes animate22 { 
+  50% {
+    transform: scale(1.22);
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  align-items: right;
+  justify-content: right;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+
+.timer button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29032e;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #224b69 74%);
+  background-size: 200% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 500ms;
+  margin-top: 20px;
+  margin-left: 5vw;
+  /* border-radius: 10px solid; */
+}
+
+.timer button:before {
+  content: 'LIVE NOW';
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  background-color: #1b2845;
+  background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+  transition: 500ms;
+}
+
+.timer button:hover {
+  background-position: right;
+}
+
+.timer button:hover:before {
+  color: red;
+  font-weight: 400;
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer h1 {
+  color: red;
+}
+
+.timerimg {
+  position: absolute;
+  width: 30vw;
+  top: 60vh;
+  left: 65vw;
+  background-color: red;
+  background-repeat: no-repeat;
+  /* background-size: 150px 70px; */
+  /* background-image: url(https://github.com/KSHITIJ-2024/media/blob/main/holographic-earth.png?raw=true); */
+  z-index: 0;
+  border: 2px solid black;
+  height: 75px;
+  font-weight: 700;
+  color: white;
+  /* background-image: url("./timing.png");
+  background-repeat: no-repeat;
+  background-size:  30rem;
+  background-position: center; */
+}
+
+
+.spaceship {
+  position: absolute;
+  width: 42vw;
+  left: 15vw;
+  top: 25vh;
+  user-select: none;
+  -webkit-user-drag: none;
+  animation-name: updown;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all;
+
+}
+
+@keyframes illufly {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    /* transform: scale(1.008);
+    opacity: 0.8; */
+    /* box-shadow: rgba(97, 93, 93, 0.25) 0px 50px 100px -20px, rgba(86, 81, 81, 0.3) 0px 30px 60px -30px; */
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+
+}
+
+@keyframes gola {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: scale(1.008);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-1.8rem);
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+  .planet {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .planet {
+    width: 45vw;
+  }
+
+  .timer {
+    width: 28vw;
+    top: 47.5vh;
+    left: 65vw;
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 650;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .planet {
+    width: 50vw;
+  }
+
+  .timer {
+    width: 30vw;
+    top: 43vh;
+    left: 64vw;
+    font-size: 25px;
+    letter-spacing: 3.9px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .planet {
+    width: 50vw;
+  }
+
+  .spaceship {
+    top: 45vh;
+  }
+
+  .ilu {
+    top: 58vh;
+    left: 50vw;
+  }
+
+  .timer {
+    width: 30vw;
+    top: 62vh;
+    left: 55vw;
+    font-size: 22px;
+    letter-spacing: 3.2px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .planet {
+    width: 60vw;
+  }
+
+  .ilu {
+    top: 60vh;
+    left: 45vw;
+  }
+
+  .timer {
+    width: 30vw;
+    top: 63vh;
+    left: 51vw;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .planet {
+    width: 65vw;
+  }
+
+  .ilu {
+    top: 60vh;
+    left: 45vw;
+  }
+
+  .timer {
+    width: 30vw;
+    top: 61vh;
+    left: 50.5vw;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .planet {
+    width: 90vw;
+    top: 7vh;
+  }
+
+  .spaceship {
+    position: absolute;
+    width: 80vw;
+    left: 15vw;
+    top: 35vh;
+
+  }
+
+  .ilu {
+    position: absolute;
+    width: 70vw;
+    top: 58vh;
+    left: 15vw;
+  }
+
+  .timer {
+    width: 30vw;
+    top: 64vh;
+    left: 49vw;
+    font-size: 17.5px;
+  }
+}

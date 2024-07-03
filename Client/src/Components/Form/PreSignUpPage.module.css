@@ -1,0 +1,468 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+.rightdiv
+{
+   
+ 
+  
+  height: 100vh;
+  width:50%;
+  color: white;
+  /* background-image: url('./Images/bg.svg'); */
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-image: url('./Images/sidebg.png');
+  
+
+}
+.astronaut{
+  
+  /* height: 90%; */
+  width: 85%;
+    position: relative;
+    top: 9vh;
+    left: 22vh;
+    /* align-items: center; */
+      animation-name: astro;
+      animation-duration: 6s;
+    
+      animation-iteration-count: infinite;
+  
+     
+    /* transition:cubic-bezier(0.19, 1, 0.22, 1); */
+  
+  }
+  @keyframes astro {
+    0%   {top:20px}
+    /* 25%  {top:5px} */
+    50%  {top:0px}
+    /* 75%  {top:5px} */
+    100% { top:20px}
+  }
+  .satellite
+  {
+     
+   
+   width: 50%;
+    position: absolute;
+    top: 8vh;
+    height: 92vh;
+  }
+
+.leftdiv{
+    position: absolute;
+    left: 50%;
+    height: 100vh;
+  width:50%; 
+  top: -1vh;
+background-image: url('./Images/bg2.png');
+ 
+}
+
+.emailcontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    /* background-color: red; */
+}
+.emailicondiv{
+    border: 4px solid #dfc8c886;
+    border-radius: 0.3rem;
+    width: 5rem;
+    height: 7.5vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.emailicon{
+    /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+    width: 1.8rem;
+    height:1.8rem;
+    
+}
+ 
+.Signupmodal
+{
+  margin-top: 20vh;
+  margin-left: 15vh;
+  color: #CD8786;
+  font-family: 'Solomon Sans Med';
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.textbox{
+  background-color: #3B2231;
+  width: 27vw;
+  height: 7.5vh;
+  font-size: 30px;
+  border-color:#c89493d1;
+  border-left-color:#dfc8c886 ;
+  border-width: 4px;
+  border-radius: 0.3rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-top: 0vh;
+  margin-bottom: 2vh;
+  padding-left: 20px;
+
+}
+.forgotpassword{
+  display: block;
+  text-align: right;
+  margin-right: 10vw;
+  margin-top: 2vh;
+  font-size: 25px;
+  color:#CD8786;
+}
+.signuptext{
+  text-align: center;
+  margin-right: 8vw;
+  margin-top: 5rem;
+  height: 10vh;
+}
+.googlelogo
+{
+  font-weight: 900;
+}
+.Signupbtn{
+  height:7.5vh;
+  width:15vw;
+   transition: all 0.2s ease-in-out;
+   margin-right: 4vw;
+   margin-top: 6vh;
+  font-size: 20px;
+  margin-bottom: -2vh;
+  background-color: inherit;
+  color: white;
+  border-color:#CD8786;
+  border-width: 2px;
+  border-radius: 0.5rem;
+ 
+}
+.Signupbtn:hover{
+  cursor: pointer;
+  height:7.5vh;
+  width:15vw;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  background-color: #CD8786;
+  color: black;
+  border-color:#CD8786;
+  border-width: 2px;
+  border-radius: 0.5rem;
+  
+  border-left-width: 7px;
+  border-left-color: rgb(290,144,145);
+  border-bottom-width: 7px;
+  border-bottom-color: #E49090;
+}
+.signuplink{
+  color:#CD8786;
+}
+@media (max-width:1119px){
+    .Signupbtn{
+        height:7vh;
+        width:30vh;
+        margin-left: 0vw;
+        margin-top: 5vh;
+         
+      }
+      .Sign{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .astronaut{
+  
+        /* height: 95%; */
+        width: 95%;
+          position: relative;
+          top: 9%;
+          left: 8%;
+           
+          transition:cubic-bezier(0.19, 1, 0.22, 1);
+        
+        }
+}
+ @media (max-width:900px) {
+  .rightdiv
+  {
+    
+    height: 37.99%;
+    width:100%;
+    color: white;
+    /* background-image: url('./Images/bg.svg'); */
+    position: absolute;
+    top: 62vh;
+    background-size: cover;
+    background-repeat: none;
+  }
+  .astronaut{
+    
+    /* height: 86%; */
+    width: 30%;
+      position: relative;
+      top: -2%;
+      left: 14%;
+       
+    }
+    .satellite{
+     width: 100%;
+      position: absolute;
+      /* height: 38vh; */
+      top: 0vh;
+    }
+
+  .emailicondiv{
+    height: 6.5vh;
+  }
+   
+.leftdiv{ 
+    position: absolute;
+    left: 0%;
+    top: -1%;
+    height: 62vh;
+  width:100%; 
+background-image: url('./Images/bg2.png');
+}
+ 
+.Signupmodal{
+  margin-top: 11vh;
+  margin-left: 0vh;
+  color: #CD8786;
+  font-family: 'Solomon Sans Med';
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+ align-items: center;
+}
+.textbox{
+  background-color: #3B2231;
+  width: 50vw;
+  height: 6.5vh;
+  font-size: 20px;
+  /* border-color:#CD8786; */
+  
+  border-width: 4px;
+  border-radius: 0.5rem;
+  margin-top: 0vh;
+  margin-bottom: 1vh;
+  padding-left: 20px;
+  align-items: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-color: #dfc8c886;
+   /* z-index: 100; */
+ 
+}
+.Signupmodal h1{
+  
+    text-align: center;
+    font-size: 42px;
+}
+.forgotpassword{
+  display: block;
+  text-align: right;
+  margin-right: 10vw;
+  margin-top: 2vh;
+  font-size: 2rem;
+  color:#CD8786;
+}
+.signuptext{
+  text-align: center;
+  margin-right: 1vw;
+  margin-top:1.5rem;
+  height: 6vh;
+ font-size: 1.2rem;
+
+}
+.googlelogo
+{
+  font-weight: 900;
+}
+ .Sign{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.Signupbtn{
+  height:7vh;
+  width:30vw;
+  /* margin-left: 13vh; */
+  margin-top: 4vh;
+  font-size: 3.5vw;
+  margin-bottom: -2vh;
+  background-color: inherit;
+  color: white;
+  border-color:#CD8786;
+  border-width: 2.7px;
+  border-radius: 0.6rem;
+
+}
+ 
+.Signupbtn:hover{
+  cursor: pointer;
+  height:7vh;
+  width:28vh;
+   
+  margin-top: 4vh;
+  font-size: 20px;
+  background-color: #CD8786;
+  color: black;
+  border-color:#CD8786;
+  border-width: 2px;
+  border-radius: 0.5rem;
+ 
+  border-left-width: 7px;
+  border-left-color: rgb(290,144,145);
+  border-bottom-width: 7px;
+  border-bottom-color: #E49090;
+  
+}
+.signuplink{
+  color:#CD8786;
+}
+   
+ }
+ @media (max-width:750px) {
+  .astronaut{
+    width: 35%;
+  }
+ }
+ 
+ @media (max-width:500px) {
+   .leftdiv{ 
+       position: absolute;
+       left: 0%;
+       top: -1%;
+       height: 64vh;
+     width:100%; 
+   background-image: url('./Images/bg2.png');
+   
+   }
+  .rightdiv
+  {
+    
+    height: 42vh;
+    width:100%;
+    color: white;
+    /* background-image: url('./Images/bg.svg'); */
+    position: absolute;
+    top: 29rem;
+    background-size: cover;
+    background-repeat: none;
+  }
+  .astronaut{
+    
+    /* height: 86%; */
+    width: 25vh;
+      position: relative;
+      top: -2%;
+      left: 14%;
+       
+    }
+    .satellite{
+     width: 100%;
+      position: absolute;
+      /* height: 38vh; */
+      top: 0vh;
+    }
+
+  .emailicondiv{
+    height: 3rem;
+  }
+   
+.Signupmodal{
+  margin-top: 8vh;
+  margin-left: 3vw;
+  color: #CD8786;
+  font-family: 'Solomon Sans Med';
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+ align-items: center;
+}
+.textbox{
+  background-color: #3B2231;
+  width: 65vw;
+  height: 3rem;
+  font-size: 20px;
+  /* border-color:#CD8786; */
+  
+  border-width: 4px;
+  border-radius: 0.5rem;
+  margin-top: 0vh;
+  margin-bottom: 1vh;
+  padding-left: 10px;
+  align-items: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-color: #dfc8c886;
+   /* z-index: 100; */
+ 
+}
+.Signupmodal h1{
+  
+    text-align: center;
+    font-size: 42px;
+}
+.forgotpassword{
+  display: block;
+  text-align: right;
+  margin-right: 10vw;
+  margin-top: 2vh;
+  font-size: 2rem;
+  color:#CD8786;
+}
+.signuptext{
+  text-align: center;
+  margin-right: 1vw;
+  margin-top:1.5rem;
+  height: 6vh;
+ font-size: 1.2rem;
+
+}
+.googlelogo
+{
+  font-weight: 900;
+}
+ .Sign{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.Signupbtn{
+  height:7vh;
+  width:45vw;
+  /* margin-left: 13vh; */
+  margin-top: 3.5vh;
+  font-size: 3.5vw;
+  margin-bottom: -2vh;
+  background-color: inherit;
+  color: white;
+  border-color:#CD8786;
+  border-width: 2.7px;
+  border-radius: 0.6rem;
+
+}
+ 
+ 
+
+ 
+ }

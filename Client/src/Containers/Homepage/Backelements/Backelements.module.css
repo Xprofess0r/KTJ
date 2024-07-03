@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+}
+
+.planet{
+    position:absolute;
+    height:80vh;
+    width:48vw;
+    z-index:0;
+}
+
+.meteorite{
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    z-index:-1;
+
+}
+
+.ilu{
+    position:absolute;
+    width:33vw;
+    height:20vh;
+    top:62vh;
+    left:60vw;
+
+}
+
+.spaceship{
+    position:absolute;
+    height:36vh;
+    width:42vw;
+    left:25vw;
+    top:33vh;
+
+}

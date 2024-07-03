@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: x proximity;
+    /* scroll-snap-points-x: repeat(100vw); */
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: none;
+  -webkit-box-shadow: auto;
+  -webkit-border-radius: auto;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #D9D9D9;
+}
+.rightArrowKey{
+  cursor: pointer;
+  z-index: 60;
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+.leftArrowKey{
+  cursor: pointer;
+  z-index: 200;
+  position: absolute;
+  left: 6rem;
+  top: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+.downArrowKey{
+  cursor: pointer;
+  z-index: 800;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+.fullScreen{
+  color:#f6a2a2;
+  position:absolute;
+  cursor:pointer;
+  left:6rem;
+  bottom:2.5rem;
+  z-index: 20;
+  /* transform:scale(1.5); */
+}
+.fullScreen:hover{
+  transform: scale(1.5);
+  color:white;
+}
+
+
+.cont {
+    width: 100vw;
+    overflow-x: scroll;
+    height: 100vh;
+    background-color: #1d304b;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.cont::-webkit-scrollbar {
+    display: none;
+}
+
+.homes {
+    height: 100%;
+    display: flex;
+    width: max-content;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-stop: always;
+}
+
+.comp {
+    width: 100vw;
+    height: 98%;
+
+}
+.audioIcon2{
+  scale: 2;
+  color: #f6a2a2;
+  position: absolute;
+  cursor:pointer;
+  left: 3rem;
+  z-index: 20;
+  bottom: 1.5rem;
+  height: 3rem;
+  width: 2rem;
+  /* background-color: red; */
+}
+.audioIcon2 :hover {
+  color:white;
+   transform: translateY(-10vh)  scale(1.25); 
+  transition: all;
+  
+}
+.audioIcon{
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+.shift {
+    margin-left: -20vw;
+}
+
+.character {
+    position: absolute;
+    bottom: 2.4vh;
+    height:55vh;
+    width: 10rem;
+    left: 40vw;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background: url(../../images/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* width: 100vw; */
+    overflow: hidden;
+    z-index: 10;
+}
+.scrollAnimation{
+  animation: framer 0.13s ease 0s infinite;
+}
+
+.scrollAnimationReverse{
+  animation: framer 0.12s reverse ease 0s infinite;
+}
+@keyframes framer{
+  0%{
+    background-image: url(../../images/1.png);
+  }
+  14.3%{
+    background-image: url(../../images/2.png);
+  }
+  28.6%{
+    background-image: url(../../images/3.png);
+  }
+  42.9%{
+    background-image: url(../../images/4.png);
+  }
+  57.2%{
+    background-image: url(../../images/5.png);
+  }
+  71.5%{
+    background-image: url(../../images/6.png);
+  }
+  85.8%{
+    background-image: url(../../images/7.png);
+  }
+  93.3%{
+    background-image: url(../../images/2.png);
+  }
+  100%{
+    background-image: url(../../images/1.png);
+  }
+}
+.scrollAnimationKey{
+  animation: shortFramer 0.12s ease 0s infinite;
+}
+.scrollAnimationKeyReverse{
+  animation: shortFramer 0.12s reverse ease 0s infinite;
+}
+@keyframes shortFramer{
+  0%{
+    background-image: url(../../images/1.png);
+  }
+  50%{
+    background-image: url(../../images/5.png);
+  }
+  100%{
+    background-image: url(../../images/1.png);
+  }
+}
+.road {
+    position: absolute;
+    height: 4vh;
+    background-color: rgb(21 36 57);
+    box-shadow: 0.4rem 0 0.9rem rgb(32, 30, 36);
+    width: 100vw;
+    left: 0;
+    bottom: 0vh;
+    z-index: 12;
+}
+@media screen and (max-width: 1050px){
+  .rightArrowKey{
+    display: none;
+  }
+  .leftArrowKey{
+    display: none;
+  }
+  .downArrowKey{
+    display: none;
+  }
+}
+  @media screen and (max-width: 1050px){
+    .character{
+        position: absolute;
+        bottom: 3vh;
+        height:40vh;
+        left: 40vw;
+    }
+
+    .road{
+      height: 10.8vh;
+      bottom: -6.8vh;
+      background-color: rgb(21 36 57);
+      box-shadow: 0 0 0;
+    }
+  }
+  
+  @media screen and (max-width: 850px){
+    .character{
+        left: 35vw;
+        height: 40vh;
+    }
+  }
+  
+  @media screen and (max-width: 700px){
+    .character{
+        left: 25vw;
+        height: 40vh;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .comp {
+        width: 100vw;
+    }
+  }

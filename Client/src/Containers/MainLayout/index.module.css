@@ -1,0 +1,7 @@
+.topHeader{
+    padding: 1rem;
+    background:linear-gradient(to right,rgb(39, 120, 212),rgb(69, 145, 231),rgb(143, 167, 245));
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}   

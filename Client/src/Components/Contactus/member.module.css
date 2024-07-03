@@ -1,0 +1,146 @@
+.back {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-image: url("./-back.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.box {
+  background-color: #f8d2d6;
+  position: absolute;
+  top: 17vh;
+  left: 7%;
+  height: 74vh;
+  width: 86%;
+  border-radius: 27px;
+}
+
+.heading {
+  color: #1b1464;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+.top_img {
+  image-rendering: optimizeSpeed;
+  width: 28%;
+  height: 40vh;
+}
+.top {
+  text-align: center;
+}
+.left_1_img,
+.right_1_img {
+  image-rendering: optimizeSpeed;
+  width: 18%;
+  height: 30vh;
+  filter: url(#blue_filter);
+}
+.left_2_img,
+.right_2_img {
+  image-rendering: optimizeSpeed;
+  width: 13%;
+  height: 22vh;
+  filter: url(#blue_filter);
+}
+.left_1 {
+  top: -56%;
+  left: 18%;
+  position: relative;
+}
+
+.left_2 {
+  top: -70%;
+  left: 7%;
+  position: relative;
+}
+.right_1 {
+  top: -128%;
+  left: 65%;
+  position: relative;
+}
+.right_2 {
+  top: -142%;
+  left: 81%;
+  position: relative;
+}
+.left_arroy,
+.right_arroy {
+  color: rgb(153, 153, 153);
+  font-size: 3rem;
+  width: 5%;
+  height: 12%;
+  top: -35%;
+  left: 35%;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+.right_arroy {
+  top: -46%;
+  left: 60%;
+}
+.detail {
+  color: #120a5a;
+
+  width: 30%;
+  z-index: 10;
+  position: absolute;
+  left: 35%;
+  text-align: center;
+  margin-top: -2.5%;
+}
+.logo {
+  width: 8%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.back_button {
+  position: absolute;
+  z-index: 10;
+  top: 93vh;
+  left: 47%;
+  padding: 0.5rem 2rem;
+  border-radius: 9rem;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  color: #c4b9e2;
+  border: 0.1em solid #c4b9e2;
+}
+.back_button:hover {
+  transform: translateY(-2px);
+}
+.back_button:active {
+  transform: translateY(2px);
+}
+
+.bottom_star_pos {
+  top: -95vh;
+  left: -5%;
+  position: absolute;
+}
+.bottom_star {
+  width: 100%;
+  height: 180vh;
+}
+.top_star {
+  width: 100%;
+  height: 180vh;
+}
+.top_star_pos {
+  top: -169vh;
+  left: 10%;
+  position: absolute;
+}
+.ufo {
+  width: 122%;
+  height: 105vh;
+}
+.ufo_pos {
+  margin-left: 18%;
+  top: -13vh;
+  left: 45%;
+  position: absolute;
+}

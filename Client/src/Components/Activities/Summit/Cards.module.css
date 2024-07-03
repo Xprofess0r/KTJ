@@ -1,0 +1,331 @@
+.mainCard{
+    width: 75vw;
+    height: 80vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(113, 117, 134, 0.548),
+        #ffffff09
+        );
+    margin: auto;
+    margin-top: 12vh;
+    display: flex;
+    flex-flow: column wrap;
+    overflow-y: scroll;
+}
+.mainCard::-webkit-scrollbar {
+    width:1px;
+    background-color: rgba(0, 0, 0, 0.001);
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  .mainCard::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px grey; 
+    border-radius: 0px;
+  }
+   
+  /* Handle */
+  .mainCard::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.005); 
+    border-radius: 0px;
+  }
+  
+  /* Handle on hover */
+  .mainCard::-webkit-scrollbar-thumb:hover {
+    background: rgba(236, 233, 233, 0.603); 
+  }
+
+.left{
+    height: 100%;
+    width: 35%;
+    min-width: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.521);
+    border-image: conic-gradient(
+      rgba(255, 255, 255, 0.616),
+      rgba(255, 255, 255, 0.623),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.678),
+      rgba(255, 255, 255, 0.671),
+      rgba(255, 255, 255, 0.651),
+      rgba(255, 255, 255, 0.623),
+      rgba(255, 255, 255, 0.63),
+      rgba(255, 255, 255, 0.596),
+      rgba(255, 255, 255, 0.616)
+    )
+    1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* .image{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+} */
+
+.right{
+    overflow-y: scroll;
+    padding-top: 1.6rem;
+    height: 100%;
+    width: 65%;
+    border: 2px solid rgba(255, 255, 255, 0.521);
+    border-image: conic-gradient(
+      rgba(255, 255, 255, 0.616),
+      rgba(255, 255, 255, 0.616),
+      rgba(255, 255, 255, 0.623),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.678),
+      rgba(255, 255, 255, 0.671),
+      rgba(255, 255, 255, 0.651),
+      rgba(255, 255, 255, 0.623),
+      rgba(255, 255, 255, 0.63),
+      rgba(255, 255, 255, 0.596),
+      rgba(255, 255, 255, 0.616)
+    )
+    1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    align-items: center;
+    min-width: 150px;
+}
+.right::-webkit-scrollbar {
+    width:1px;
+    background-color: rgba(0, 0, 0, 0.001);
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  .right::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px grey; 
+    border-radius: 0px;
+  }
+   
+  /* Handle */
+  .right::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.005); 
+    border-radius: 0px;
+  }
+  
+  /* Handle on hover */
+  .right::-webkit-scrollbar-thumb:hover {
+    background: rgba(236, 233, 233, 0.603); 
+  }
+
+.image{
+    width: 100%;
+    min-width: 120px;
+    height: 100%;
+    min-height: 160px;
+    background-color: white;
+}
+
+.til{
+  text-align: center;
+    padding-top: 0.5rem;
+    font-size: 1.6rem;
+    font-family: NeueKabel;
+    color: white;
+    font-weight: bolder;
+    width: 70%;
+}
+
+.desc{
+    font-family: NeueKabel;
+    color: white;
+    align-items: center;
+    max-width: 86%;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    overflow-y: scroll;
+}
+.desc::-webkit-scrollbar {
+    width:1px;
+    background-color: rgba(0, 0, 0, 0.001);
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  .desc::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px grey; 
+    border-radius: 0px;
+  }
+   
+  /* Handle */
+  .desc::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.005); 
+    border-radius: 0px;
+  }
+  
+  /* Handle on hover */
+  .desc::-webkit-scrollbar-thumb:hover {
+    background: rgba(236, 233, 233, 0.603); 
+  }
+  
+.button{
+  white-space: nowrap;
+  padding: 0.2rem;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  width: min-content;
+  margin-bottom: 0.4rem;
+  margin-top: 0.2rem;
+  /* margin: auto; */
+  /* margin-top: 0.3rem; */
+  /* margin-right: 77%; */
+  /* margin-left: 5%; */
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: all 1s ease;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  font-size: 1.5rem;
+  color: white;
+  
+}
+
+.button:hover{
+    background-color: white;
+    color: rgb(2, 0, 47);
+  }
+
+  .slide{
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0);
+    white-space: nowrap;
+    /* display: inline-block; */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .bNam{
+    font-size: 1.2rem;
+    font-family: NeueKabel;
+    color: white;
+    text-transform: uppercase;
+    margin-top: .3rem;
+    line-height: 1.2;
+  }
+
+  .bCom{
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: NeueKabel;
+    color: white;
+    margin-top: .2rem;
+    line-height: 1.2;
+  }
+
+  .frames{
+    /* width: 5rem; */
+    width: 100%;
+    /* text-overflow: ellipsis; */
+    align-items: center;
+    white-space:pre-line;
+    margin: auto;
+    /* display: flex; */
+    flex-flow: row nowrap;
+    /* overflow-x: scroll; */
+    padding: 0.5rem;
+    justify-content: center;
+  }
+
+  .bImg
+  {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 11rem;
+    object-fit: cover;
+    object-position: top; 
+  }
+  .Control{
+      height: 3rem;
+      cursor: pointer;
+  }
+
+  @media only screen and (max-width:1312px){
+    .mainCard{
+      height: 70vh;
+    }
+  }
+  @media only screen and (max-width:1160px){
+    .mainCard{
+      height: 68vh;
+    }
+  }
+
+  @media only screen and (max-width:1000px){
+    .mainCard{
+        height: min-content;
+        width:90vw;
+        /* height: min-content; */
+        /* flex-flow: column wrap; */
+    }
+    .left{
+        /* height: 50vh; */
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        height: 100vw;
+        justify-content: center;
+        margin: auto;
+        /* min-width: 120px; */
+        border-bottom: 0;
+    }
+    .image{
+      width: 100%;
+      margin: auto;
+      height: 100%;
+    }
+    /* .image {
+        flex: 1;
+    } */
+    .til{
+      padding: 0.6rem;
+      font-size: 1.5rem;
+      text-align: center;
+      flex: 1;
+      align-self: center;
+      margin: auto;
+      width: 90%;
+    }
+    .slide {
+      width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .slider{
+      margin-bottom: 1.5rem;
+    }
+    .button{
+      margin-bottom: 1rem;
+    }
+}
+

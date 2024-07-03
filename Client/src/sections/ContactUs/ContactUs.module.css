@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+.container {
+    width : 100vw ;
+    height : 100vh;
+    background-image:url('https://i.postimg.cc/9fcg6FXZ/Background-comp.jpg') ;
+    background-repeat:no-repeat ;
+    overflow: hidden;
+    background-size:cover ;
+    display: flex;
+    flex-direction : column ;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.teams {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: min(2rem, 4vw);
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: min(1rem, 2vw);
+    transition: all 0.5s;
+
+}
+
+.selectedTeam {
+    transform: scale(1.2);
+}
+
+
+.teamLogo {
+    width: min(15rem, 25vw);
+    transition: all 0.5s ease-in-out;
+    margin-top: 3rem;
+}
+
+.teamText {
+    width: min(15rem, 25vw);
+    transition: all 0.5s ease-in-out;
+}
+
+.teamActive .teamLogo {
+    width: min(8rem, 16vw);
+}
+
+.teamActive .teamText {
+    width: min(8rem, 16vw);
+}
+
+.members {
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    background: rgba(81, 240, 254, 0.1);
+    border-radius: 1rem;
+    align-items: center;
+    max-width: calc(100vw - 8rem);
+    min-height: 1rem;
+    overflow: hidden; 
+    opacity: 0;
+    transition: none;
+    max-height: 0;
+}
+
+.members.show {
+    opacity: 1;
+    padding: 2rem 2rem 0 2rem;
+    max-height: 100vh;
+    transition: all 1s ease-in-out;
+}
+
+.membersTeamText {
+    width: min(15rem, 25vw);
+}
+
+.carousel {
+    /* max-height: 10rem; */
+    width: 100%;
+}
+
+.profile {
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    max-width: 14rem;
+}
+
+.profileUpper {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -2rem;
+    row-gap: 0.25rem;
+
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: all 0.2s;
+} 
+
+.socials a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+} 
+
+.memberImage {
+    background-image: url('https://i.postimg.cc/MKMx9BWL/image.png');
+    background-size: contain;
+    width: 8rem;
+    height: 8rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.memberName {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #0cc;
+    font-weight: bold;
+    font-family: 'Audiowide',sans-serif;
+    text-align: center;
+}
+
+.memberPost {
+    font-family: 'Audiowide',sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.memberImage > img {
+    height: 100%;
+    width: 100%;
+    margin-left: 7px;
+    margin-bottom: 5px;
+    border-radius: 10rem;
+}
+
+.mobileSlider {
+    display: none;
+}
+
+.backBtn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+    text-shadow: 0 0 1rem #0ddd;
+    color: #0dd;
+    animation: swing 1s infinite alternate ease-in-out;
+}
+
+.backBtn span:nth-child(1) { font-size: 2rem; }
+.backBtn span:nth-child(2) { font-size: 1rem; }
+
+@media screen and (max-width: 480px) {
+
+    .carousel {  display: none; }
+    .teamActive { display: none;}
+
+    .members {
+        width: 100vw;
+        max-width: 100vw;
+        box-sizing: border-box;
+        height: 100vh;
+        padding: 2rem 0 0 0 !important;
+        border-radius: 0;
+    }
+
+    .mobileSlider {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        row-gap: 2rem;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 70vh;
+    }
+
+    .backBtn { display: flex; }
+
+    .teams {
+        flex-direction: column;
+        row-gap: min(2rem, 5vh);
+        margin-top: 0px !important;
+    }
+
+    .teamLogo {
+        width: min(12rem, 20vh);
+        margin-top: 0;
+    }
+
+    .membersTeamText {
+        width: min(20rem, 40vw);
+        margin-top: 2rem;
+    }
+    
+    .teamText {
+        width: min(12rem, 20vh);
+    }
+}
+
+@keyframes swing {
+    from { transform: translateX(0rem); }
+    to { transform: translateX(0.5rem); }
+}

@@ -1,0 +1,377 @@
+.container {
+  position: relative;
+} 
+.combined {
+  position: absolute;
+  width: 50vw;
+  top: 6vh;
+right: 40vh;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  animation: space_spin 12s;
+  animation-iteration-count: infinite;
+}
+.combinedO {
+  position: absolute;
+  width: 80vw;
+  top: 6vh;
+right: 40vh;
+rotate: -3deg;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  
+}
+@keyframes space_spin{
+  from{
+    transform: rotate(8deg);
+    width: 32vw;
+    top: 80vh;
+  right: 200vh;
+    transform-origin: bottom right  ;
+  }
+  to{
+  transform: rotate(20deg);
+  top: -29vh;
+  margin-top: 5vw;
+  right: 15vw;
+  width: 19vw;
+  margin-left: 2rem;
+  transform-origin: bottom right  ;
+}
+}
+.planet {
+  position: absolute;
+  width: 65vw;
+  left: 45vh;
+  top: 7vh;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+   animation: circle-spin 100s infinite linear;
+}
+@keyframes circle-spin { 
+  from {
+   transform: rotate(0deg);
+ }
+ to {
+   transform: rotate(360deg);
+ }
+}
+.posI{
+  position: absolute;
+  top: 25vh;
+  right: 15vw;
+  width:25vw;
+}
+.HeI {
+  color: #d594ab;
+  font-family: 'Ardela';
+  font-weight: 550;
+  letter-spacing: 0.3vw;
+  transition: all 3s ease-in-out 0s;;
+  animation: animate2 3s ease-in-out infinite;
+}
+@keyframes animate2 { 
+  50% {
+     text-shadow: 4px -4px 10px #ec7070,
+     -4px 4px 10px #ec7070;
+  }
+}
+.DeI {
+  border-left: 0.3vw solid white;
+  padding-left: 0.7vw;
+}
+
+
+@media screen and (max-width: 990px) {
+  .planet {
+    width: 65vw;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .planet {
+    top: 5vh;
+    left: 7vh;
+    width: 90vw;
+  }
+  .combined {
+    position: absolute;
+    width: 50vw;
+    left:0vw;
+    top: 15vh;
+  }
+  .combinedO {
+    position: absolute;
+    width: 100vw;
+    left:0vw;
+    margin-left: -6.6rem;
+    top: 15vh;
+    margin-top: 3rem;
+    animation-duration: 6s;
+    rotate: -20deg;
+  }
+  @keyframes space_spin{
+    from{
+      transform: rotate(0deg);
+      width: 60vw;
+      top: 30vh;
+      opacity: 0.4;
+      right: 40vh;
+      margin-left: -2rem;
+      transform-origin: bottom right  ;
+      rotate: -10deg;
+    }
+    to{
+      transform: rotate(-10deg);
+      top: 0vh;
+      right: 0;
+      opacity: 1;
+      margin-left: 27vh;
+      width: 40vw;
+      rotate: 22deg;
+    transform-origin:  bottom right  ;
+   
+  }
+  }
+  
+  .posI {
+  left:52vw;
+  width:36vw;
+  top:40vh;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .planet {
+    top: 5vh;
+    left: 7vh;
+    width: 90vw;
+  }
+
+  .combined {
+    position: absolute;
+    width: 100vw;
+    left:0vw;
+    top: 15vh;
+  }
+  .combinedO {
+    position: absolute;
+    width: 100vw;
+    left:0vw;
+    top: 15vh;
+  }
+  .posI {
+  left:50vw;
+  width:40vw;
+  top:38vh;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .planet {
+    top: 5vh;
+    left: 7vh;
+    width: 90vw;
+  }
+
+  .combined {
+    position: absolute;
+    width: 100vw;
+    left:0vw;
+    top: 15vh;
+  }
+  .combinedO {
+    position: absolute;
+    width: 100vw;
+    left:0vw;
+    top: 15vh;
+  }
+  .posI {
+  left:48vw;
+  width:38vw;
+  top:35vh;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  
+  .posI {
+    width: 40vw;
+    top:48vh;
+    left:15vw;
+  }
+  .planet {
+    top: 5vh;
+  left:0vw;
+    width: 100vw;
+  }
+
+  .combined {
+    position: absolute;
+    width: 160vw;
+    top: -25vh;
+    left:30vw;
+  }
+  .combinedO {
+    position: absolute;
+    width: 175vw;
+    top: -25vh;
+    left:30vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  
+  .posI {
+    width: 46vw;
+    top:48vh;
+    left:42vw;
+  }
+  .planet {
+    top: 5vh;
+    left:0vw;
+    width: 100vw;
+  }
+
+  .combined {
+    position: absolute;
+    width: 150vw;
+    top: -5vh;
+    left:0vw;
+  }
+  .combinedO {
+    position: absolute;
+    width: 150vw;
+    top: -5vh;
+    left:0vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+}
+@media screen and (max-width:420px) {
+  
+  .posI {
+    width: 48vw;
+    top:50vh;
+    left:15vw;
+  }
+  .planet {
+    top: 5vh;
+    left:0vw;
+    width: 100vw;
+  }
+
+  .combined {
+    position: absolute;
+    width: 200vw;
+    top: -6vh;
+    left:0vw;
+  }
+  .combinedO {
+    position: absolute;
+    width: 200vw;
+    top: -6vh;
+    left:0vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:380px) {
+  .HeI{
+    font-size: 1.5rem;
+  }
+  .DeI{
+    font-size: 0.8rem;
+  
+    padding-left: 2vw;
+  }
+  .posI {
+    width: 55vw;
+    top:50vh;
+    left:11vw;
+  }
+  .planet {
+    top: 8vh;
+    left:0vw;
+    width: 100vw;
+  }
+
+  .combined {
+    position: absolute;
+    width: 200vw;
+    top: -10vh;
+    left:-1vw;
+  }
+  .combinedO {
+    position: absolute;
+    width: 200vw;
+    top: -10vh;
+    left:-1vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+}
+@media screen and (max-width:280px) {
+  .HeI{
+    font-size: 1.5rem;
+  }
+  .DeI{
+    font-size: 0.8rem;
+  
+    padding-left: 2vw;
+  }
+  .posI {
+    width: 80vw;
+    top:50vh;
+    left:15vw;
+  }
+  .planet {
+    top: 5vh;
+  left:0vw;
+    width: 100vw;
+  }
+
+  .combined {
+    position: absolute;
+    width: 250vw;
+    top: -5vh;
+  }
+  .combinedO {
+    position: absolute;
+    width: 200vw;
+    top: -5vh;
+    left:5vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+}

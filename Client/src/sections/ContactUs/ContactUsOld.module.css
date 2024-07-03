@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+.container{
+    width : 100vw ;
+    height : 100vh;
+    background-image:url('https://i.postimg.cc/9fcg6FXZ/Background-comp.jpg') ;
+    background-repeat:no-repeat ;
+    overflow: hidden;
+    background-size:cover ;
+    display: flex;
+    flex-direction : column ;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+  display: none;
+}
+.team_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+.team_flex_mobile{
+  display: none;
+}
+.team{
+width: 30%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+.team>img{
+    width : 70%;
+    cursor: pointer;
+}
+
+.heading_img>img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;  
+}
+.heading_img>img{
+    height: 10vh;
+}
+.logo_heading>img{
+    height: 5%;
+}
+.enlarged{
+    transform: scale(1.2);
+    transition : 0.5s ease-in-out;
+}
+.shrink{
+    transform : scale(0.9);
+    transition : 0.5s ease-in-out ;
+}
+.scaled {
+    transition: 2s ease-in-out;
+    transform: translateY(-5.1rem) scale(0.6);
+    height : 15vh;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+  }
+  
+ .newDiv{
+    width : 80%;
+    height : 40%;
+    background-color:rgba(5,38,47,0.5);
+    transition: 2sec ease-in;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+} 
+.info {
+    display : flex ;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.carousel {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.linkedinicon , .facebookicon, .emailicon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin:0.1rem;
+}
+.Carouselcontainer {
+  position:relative;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    /* text-align: left;  */
+    /* margin-left: 1rem; */
+  }
+  
+  .socialmedia {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    margin-right: 1rem;
+  }
+  .socialmedia>img{
+    margin-bottom: 0.1px;;
+  }
+  .block{
+    display: none;
+  }
+  .carousel_heading{
+    height: 5vh;
+    font-size: 1.5rem;
+    margin:auto;
+    width : 15vw;
+    font-weight:800 ;
+    font-family: 'Audiowide',sans-serif;
+    text-shadow: 0  0 10px #43b6d8, /* Light blue glow */
+    0 0 20px #43b6d8, /* Light blue glow */
+    0 0 30px #43b6d8;
+    margin-top: 1rem;
+  }
+  .shrink_heading{
+    transform: scale(0.8);
+    margin: 0;
+  }
+  .info_img{
+    background-image: url('https://i.postimg.cc/MKMx9BWL/image.png');
+    background-size: cover;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .info_img > img {
+    position: relative;
+    left: 0.25rem;
+    width: 7rem;
+    height : 7rem ;
+    border-radius: 50%;;
+    margin: auto;
+}
+.info_name{
+    text-transform: uppercase;
+    size: 1.1rem;
+    color :#43b6d8;
+    font-family: 'Audiowide',sans-serif;
+    margin-top:0.5rem;
+    text-align: center;
+    font-weight: 600;
+    text-align: left;
+}
+.designation{
+    font-family: 'Audiowide',sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+}
+.mobile_ver{
+  display: none;
+}
+@media (max-width:1700px) {
+  .team_flex{
+    width: 100vw;
+  }
+  .heading_img{
+    transform: scale(0.7);
+    
+  }
+}
+@media (max-width:1300px) {
+  .team_flex{
+    width: 100vw;
+  }
+  .heading_img{
+    transform: scale(0.7);
+  }
+}
+@media (max-width:1200px) {
+  .team_flex{
+    width: 100vw;
+  }
+  .carousel_heading{
+    width: 13vw;
+    font-size: 1.2rem;
+  }
+  .info .designation{
+    font-size: 1rem;
+  }
+  .shrink_heading>img{
+    transform: scale(0.7);
+  }
+  .heading_img{
+    transform: scale(0.5);;
+  }
+}
+@media (max-width:1000px) {
+  .team_flex{
+  width: 100vw;
+  }
+  .heading_img{
+    transform:scale(0.4);
+  }
+  .carousel_heading{
+    width: 20vw;
+  }
+}
+@media (max-width:900px) {
+
+  .newDiv{
+    transform: translateY(-4rem);
+  }
+  .heading_img{
+    transform:scale(0.3);
+  }
+  .shrink_heading>img{
+    transform: scale(0.6);
+    margin: 0;
+  }
+  .shrink{
+    margin-left:0.5rem;
+  }
+  .shrink_heading{
+    margin-left: 0.5rem;
+  }
+  .shrink>img{
+    transform: scale(1.2);
+  }
+  .carousel_heading{
+    font-size: 1.2rem;
+    width: 25vw;
+  }
+  .info_img{
+    background-image: url('https://i.postimg.cc/MKMx9BWL/image.png');
+    background-size: cover;
+    width: 6rem;
+    height:6rem;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .info_img > img {
+    position: relative;
+    left: 0.25rem;
+    width: 5rem;
+    height : 5rem ;
+    border-radius: 50%;;
+    margin: auto;
+}
+.socialmedia{
+  transform: scale(0.8);
+}
+.info_name{
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color :#43b6d8;
+  font-family: 'Audiowide',sans-serif;
+  margin-top:0.5rem;
+  text-align: center;
+  font-weight: 600;
+  text-align: left;
+}
+.designation{
+  font-size: 0.8rem;
+  font-family: 'Audiowide',sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+}
+.team_flex{
+  /* flex-direction: column; */
+width: 100%;
+}
+}
+@media (max-width:580px) {
+  .container{
+    overflow: visible;
+    width: 100%;
+  
+    background-image:url('https://i.postimg.cc/9fcg6FXZ/Background-comp.jpg') ; 
+    
+    height: auto;
+  
+  }
+  .team_flex{
+    display: none;
+  }
+ .team_flex_mobile{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+
+ }
+ .team{
+  width: 60%;
+  height: 27vh;
+  margin-bottom: 2rem;
+ }
+ .team>img{
+  width: 60%;;
+ }
+ .logo_img{
+  display: flex;
+  justify-content: center;
+ }
+ .logo_img>img{
+width: 60%;
+ margin: auto;
+
+}
+.hide{
+  display: none;
+}
+.newDiv_mobile{
+  width: 100vw;
+  background-color: rgba(44,0,49,0.8);
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+.team_head_mobile {
+  width: 40vw;
+  text-align: center;
+  height: 10vh;
+  margin: auto;
+  margin-top: 3rem;;
+  color: white;
+  font-size: 1rem; 
+  text-shadow: 0 0 10px #43b6d8, /* Light blue glow */
+  0 0 20px #43b6d8, /* Light blue glow */
+  0 0 30px #43b6d8;
+  transform: scale(1.5);
+  transition: transform 2s ease-in-out;
+  font-family: 'Audiowide', sans-serif;
+  text-transform: uppercase;
+}
+
+.socialmedia_mobile{
+  display: flex;
+  flex-direction: column;
+  width:20vw;
+  justify-content: space-evenly;
+  height: 50%;
+  margin-bottom: 2rem;
+  
+}
+.bi{
+  margin-left: 2rem;
+  height: 2rem;
+  width: 2rem;
+}
+.mobile_info{
+  height: 30vh;
+  width: 80%;
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+}
+.info_name,.designation{
+  text-align: center;
+  width: 80vw;
+}
+.info_img{
+  margin:auto;
+  width: 12rem;
+  height: 12rem;
+}
+.info_img>img{
+  width:11rem;
+  height: 11rem;
+}
+.info_name{
+  font-size: 1.2rem;
+}
+.designation{
+  font-size: 1.2rem;
+}
+.back_btn{
+  background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    
+    position: fixed;
+    bottom : 2rem;
+    right: 1rem;
+    text-transform: uppercase;
+    font-family: 'audiowide',sans-serif;
+    padding: 0.25rem;
+   border-radius: 5rem;
+   width: 20%;
+   text-shadow: 0 0 10px #43b6d8, /* Light blue glow */
+  0 0 10px #43b6d8, /* Light blue glow */
+  0 0 10px #43b6d8;
+}
+}
+@media (max-width:400px) {
+  .info_img{
+    margin:auto;
+    width: 11rem;
+    height: 11rem;
+  }
+  .info_img>img{
+    width:10rem;
+    height: 10rem;
+  }
+  .mobile_info{
+    height: 35vh;
+    margin-bottom: 2rem;
+  }
+  .info_name{
+    font-size: 1rem;
+  }
+  .designation{
+    font-size: 1rem;
+  }
+  .back_btn{
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    
+    position: fixed;
+    bottom : 2rem;
+    right: 1rem;
+    text-transform: uppercase;
+    font-family: 'audiowide',sans-serif;
+    padding: 0.25rem;
+   border-radius: 5rem;
+   width: 20%;
+   text-shadow: 0 0 10px #43b6d8, /* Light blue glow */
+  0 0 10px #43b6d8, /* Light blue glow */
+  0 0 10px #43b6d8;
+  }
+}
+

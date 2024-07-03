@@ -1,0 +1,182 @@
+.container {
+  background-image: linear-gradient(to right, #398cb9, #051829);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.heading {
+  z-index: 2;
+  color: white;
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+.Outerbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.right,
+.left {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  height: calc(100vh - 10rem);
+  padding-bottom: 5rem;
+  overflow: scroll;
+  width: 50%;
+}
+.right::-webkit-scrollbar {
+  display: none;
+}
+.box {
+  width: 30rem;
+  height: min-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+}
+.eventPoster {
+  width: 100%;
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+}
+
+.eventDetails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding: 1rem;
+  opacity: 0;
+  transition: all 0.5s;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Exo", sans-serif;
+  border-radius: 0.5rem;
+}
+
+.eventButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid #fffa 0.1rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.eventButtons input[type="button"] {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: white;
+  color: black;
+  font-family: "Exo", sans-serif;
+  margin-top: 0.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.eventButtons input[type="button"]:hover {
+  background-color: black;
+  color: white;
+}
+
+.eventCompany {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 1rem;
+  display: block;
+  border-bottom: solid #fffa 0.1rem;
+}
+
+.box:hover .eventPoster {
+  filter: brightness(0.6) blur(4px);
+}
+
+.box:hover .eventDetails {
+  opacity: 1;
+}
+
+.eventTitle {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 25rem;
+  text-align: center;
+  text-shadow: 0 0 1rem #000;
+  font-family: "Exo", sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  .left {
+    width: 40%;
+  }
+  .right {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .left {
+    width: 20%;
+  }
+  .eventTitle {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .eventDetails {
+    font-size: 1rem;
+  }
+
+  .eventCompany {
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .left {
+    display: none;
+  }
+
+  .box {
+    width: 100%;
+  }
+  .right {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .box .heading {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}

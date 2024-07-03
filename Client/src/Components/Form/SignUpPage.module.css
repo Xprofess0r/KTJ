@@ -1,0 +1,1075 @@
+.container {
+  font-family: 'NeueKabel';
+  margin-top: 8px;
+  margin-left: 10px;
+  padding: 10px;
+  font-family: 'NeueKabel';
+}
+
+.form {
+  /* position: absolute; */
+  z-index: 10;
+}
+
+select {
+  background-color: transparent;
+  border: none;
+}
+
+option {
+  background-color: #223175;
+  border: none;
+  outline: none;
+}
+
+.OG{
+  font-family: 'Cabin', sans-serif;
+  /* font-weight: 600; */
+  /* font-size: 1.1rem; */
+  text-align: left;
+  background-color: #3b2231;
+  width: 180%;
+  max-width: 30vw;
+  height: 5vh;
+  font-size: large;
+  margin-top: 0vh;
+  margin-bottom: 3vh;
+  padding-left: 20px;
+  border: none;
+  border-bottom: 1px solid #ffb5e0;
+  color: white;
+
+}
+.SG{
+  font-family: 'Cabin', sans-serif;
+  /* font-weight: 600; */
+  /* font-size: 1.1rem; */
+  text-align: left;
+  background-color: #3b2231;
+  width: 180%;
+  max-width: 30vw;
+  height: 5vh;
+  font-size: large;
+  margin-top: 0vh;
+  margin-bottom: 3vh;
+  padding-left: 20px;
+  border: none;
+  border-bottom: 1px solid #ffb5e0;
+  color: white;
+
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+option:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 997px) {
+  .form {
+    left: 90%;
+  }
+
+  .presignupform {
+    position: absolute;
+    right: 10%;
+    top: 42%;
+    width: 430px;
+    background-image: linear-gradient(145deg,
+        rgb(255 255 255 / 35%),
+        rgb(255 255 255 / 10%));
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .signupform {
+    right: 10%;
+    top: 12%;
+    width: 430px;
+  }
+}
+
+.errors {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 3vh;
+  margin-top: -15px;
+  /* border: 1px solid black; */
+}
+
+.signupform {
+  position: absolute;
+  top: 20%;
+  background-image: linear-gradient(145deg,
+      rgb(255 255 255 / 35%),
+      rgb(255 255 255 / 10%));
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icons {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.inputRow {
+  display: flex;
+}
+
+.input_icons i {
+  position: absolute;
+}
+
+.input_icons {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_icons i {
+  color: white;
+}
+
+.signupPage_icons {
+  width: 17px;
+  position: absolute;
+  margin: 12px 0px 0 8px;
+  color: white;
+}
+
+svg[data-icon='phone-volume'] {
+  transform: rotate(-45deg);
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type='text'] {
+  background-color: transparent;
+  /* border: none; */
+  /* border-bottom: 2px solid #42649e; */
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input_field {
+  width: 100%;
+  padding: 10px;
+  /* text-align: center; */
+  outline: none;
+  color: white;
+}
+
+.password_field {
+  -webkit-text-security: disc;
+  padding-right: 35px;
+}
+
+.with_icon {
+  padding-left: 35px;
+}
+
+.input_field::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+@media (max-width: 996px) {
+  .form {
+    position: absolute;
+    z-index: 10;
+    top: 7%;
+    /* left: 90%; */
+  }
+
+  .presignupform {
+    position: relative;
+    /* right: 10%; */
+    top: 42%;
+    left: 6%;
+    /* right: 8%; */
+    width: 90vw;
+    background-image: linear-gradient(145deg,
+        rgb(255 255 255 / 35%),
+        rgb(255 255 255 / 10%));
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .signupform {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    width: 90vw;
+    transform: translateX(5.5%);
+    background-image: linear-gradient(145deg,
+        rgb(255 255 255 / 35%),
+        rgb(255 255 255 / 10%));
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  }
+
+  .inputCol {
+    flex: 2;
+  }
+
+  @media (max-width: 396px) {
+    input {
+      font-size: 11px;
+    }
+
+    button {
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 345px) {
+    input {
+      font-size: 9px;
+    }
+
+    button {
+      font-size: 9px;
+    }
+  }
+
+  @media (min-device-width: 767px) and (max-device-width: 996px) {
+    input {
+      font-size: 19px;
+    }
+
+    button {
+      font-size: 19px;
+    }
+  }
+}
+
+.error_message {
+  color: red;
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rightdiv {
+  height: 100vh;
+  width: 50%;
+  color: white;
+  /* position:fixed; */
+  background-image: url("./Images/sidebg.png");
+  /* background-image: url('./Images/bg.svg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.astronaut {
+  /* height: 89%; */
+  width: 85%;
+  position: relative;
+  top: 6vh;
+  left: 7vw;
+  animation-name: astro;
+  animation-duration: 6s;
+
+  animation-iteration-count: infinite;
+
+
+}
+
+@keyframes astro {
+  0% {
+    top: 20px
+  }
+
+  /* 25%  {top:5px} */
+  50% {
+    top: 0px
+  }
+
+  /* 75%  {top:5px} */
+  100% {
+    top: 20px
+  }
+}
+
+.satellite {
+  width: 50%;
+  position: absolute;
+  top: 8vh;
+  height: 92vh;
+}
+
+.leftdiv {
+
+  position: absolute;
+  left: 50%;
+  margin-top: 0.9rem;
+  padding-top: 5rem;
+  height: 91.8vh;
+  width: 50%;
+  top: -1.1rem;
+  background-image: url("./Images/bg2.png");
+}
+
+.emailcontainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.emailicondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; */
+}
+
+.emailicon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.usernamecontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.usernameicondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.usernameicon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.contactcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.fillingerrors {
+  display: flex;
+  flex-direction: row;
+}
+
+.contacticondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.contacticon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.gendercontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.gendericondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.gendericon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.collegecontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.collegeicondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.collegeicon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.collegeidcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.collegeidicondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.collegeidicon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.departmentcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.departmenticondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.departmenticon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.citycontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.cityicondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.cityicon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.statecontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.stateicondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.stateicon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.passwordcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+::placeholder {
+  font-size: large;
+}
+
+.passwordicondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.passwordicon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.confirmpasswordcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  /* background-color: red; */
+}
+
+.confirmpasswordicondiv {
+  border: 4px solid #d7cfcf39;
+  border-radius: 0.2rem;
+  width: 2.6rem;
+  height: 4.3vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border-right: 0px; */
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+}
+
+.confirmpasswordicon {
+  /* border-color:#CD8786;
+  border-width: 4px;
+  border-radius: 0.5rem; */
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.contactgendercontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.collegecollegeidcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.citystatecontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.passwordconfirmpasswordcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.sign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Signupmodal {
+  margin-top: 20vh;
+  margin-left: 15vh;
+  color: #cd8786;
+  font-family: "Solomon Sans Med";
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.textboxcontainer {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.textbox {
+  background-color: #3b2231;
+  width: 90%;
+  height: 5vh;
+  font-size: x-large;
+  margin-top: 0vh;
+  margin-bottom: 3vh;
+  padding-left: 20px;
+  border: none;
+  border-bottom: 1px solid #ffb5e0;
+  color: white;
+}
+
+.forgotpassword {
+  display: block;
+  text-align: right;
+  margin-right: 10vw;
+  margin-top: 2vh;
+  font-size: 25px;
+  color: #cd8786;
+}
+
+.signuptext {
+  text-align: center;
+  margin-right: 8vw;
+  margin-top: 5rem;
+  height: 10vh;
+}
+
+.googlelogo {
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+.Signupbtn {
+  height: 7.5vh;
+  width: 15vw;
+  transition: all 0.2s ease-in-out;
+  margin-right: 2vw;
+  margin-top: 3vh;
+  font-size: 20px;
+  margin-bottom: -2vh;
+  background-color: inherit;
+  color: white;
+  border-color: #cd8786;
+  border-width: 2px;
+  border-radius: 0.5rem;
+}
+
+.Signupbtn:hover {
+  cursor: pointer;
+  height: 7.5vh;
+  width: 15vw;
+  font-size: 20px;
+  background-color: #cd8786;
+  color: black;
+  border-color: #cd8786;
+  border-width: 2px;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  border-left-width: 7px;
+  border-left-color: rgb(290, 144, 145);
+  border-bottom-width: 7px;
+  border-bottom-color: #e49090;
+}
+
+.signuplink {
+  color: #cd8786;
+}
+
+.totaldiv {
+  z-index: 10;
+  /* display: flex;
+  flex-flow: row wrap; */
+  overflow-y: auto;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* max-height: 100px; */
+  /* width: 50vw; */
+}
+
+@media(max-width:1400px) {
+
+  .astronaut {
+    /* height: 89%; */
+    width: 92%;
+    position: relative;
+    top: 15vh;
+    left: 8vw;
+
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+  }
+
+  ::placeholder {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 1119px) {
+  .Signupbtn {
+    height: 7vh;
+    width: 30vh;
+    margin-left: 0vw;
+    margin-top: 3vh;
+  }
+
+  .sign {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .astronaut {
+    width: 100%;
+    position: relative;
+    top: 16vh;
+    left: 8vw;
+  }
+}
+
+@media (max-width: 978px) {
+
+  .astronaut {
+    left: -2vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .rightdiv {
+    display: none;
+  }
+
+  .signinmodal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .textboxcontainer {
+    width: 80%;
+    margin-left: 0;
+    font-size: medium;
+  }
+
+  .emailcontainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  ::placeholder {
+    font-size: medium;
+  }
+
+  .gendericondiv {
+
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .emailcondiv {
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .contacticondiv {
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .passwordcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .confirmpasswordcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .departmenticondiv {
+    width: 2.5rem;
+    height: 4vh;
+
+  }
+
+  .cityicondiv {
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .stateicondiv {
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .passwordicondiv {
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .collegeicondiv {
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .collegeidicondiv {
+
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .usernameicondiv {
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .emailicondiv {
+    width: 2.5rem;
+    height: 4vh;
+  }
+
+  .astronaut {
+    height: 55%;
+    width: 30%;
+    position: relative;
+    top: 5vh;
+
+
+  }
+
+  .satellite {
+    /* width: 100%; */
+    position: absolute;
+    /* height: 38vh; */
+    top: 0vh;
+    background-size: cover;
+    display: none;
+  }
+
+
+  .leftdiv {
+    position: absolute;
+    left: 0%;
+    height: 94.2%;
+    width: 100%;
+    background-repeat: none;
+    box-sizing: border-box;
+  }
+
+  .full {
+    width: 100%;
+  }
+
+  .Signupmodal {
+    margin-top: 9vh;
+    margin-left: 0vh;
+    color: #cd8786;
+    font-family: "Solomon Sans Med";
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .textbox, .SG, .OG {
+    background-color: #3b2231;
+    height: 4vh;
+    width: 90%;
+    font-size: medium;
+    color: white;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    padding-bottom: 0.2rem;
+    padding-left: 20px;
+    align-items: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: #dfc8c886;
+  }
+
+  .SG, .OG{
+    font-size: small;
+    text-align: left;
+    min-width: 26vw;
+  }
+
+  .Signupmodal h1 {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .forgotpassword {
+    display: block;
+    text-align: right;
+    margin-right: 10vw;
+    margin-top: 2vh;
+    font-size: 2rem;
+    color: #cd8786;
+  }
+
+  .signuptext {
+    text-align: center;
+    margin-right: 1vw;
+    margin-top: 1.5rem;
+    height: 6vh;
+    font-size: 1.2rem;
+  }
+
+  .googlelogo {
+    font-weight: 550;
+  }
+
+  .Sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Signupbtn {
+    height: 7vh;
+    width: 30vw;
+    /* margin-left: 13vh; */
+    margin-top: 4vh;
+    font-size: 3.5vw;
+    margin-bottom: -2vh;
+    background-color: inherit;
+    color: white;
+    border-color: #cd8786;
+    border-width: 2.7px;
+    border-radius: 0.6rem;
+  }
+
+  .Signupbtn:hover {
+    cursor: pointer;
+    height: 7vh;
+    width: 28vh;
+
+    margin-top: 4vh;
+    font-size: 20px;
+    background-color: #cd8786;
+    color: black;
+    border-color: #cd8786;
+    border-width: 2px;
+    border-radius: 0.5rem;
+
+    border-left-width: 7px;
+    border-left-color: rgb(290, 144, 145);
+    border-bottom-width: 7px;
+    border-bottom-color: #e49090;
+  }
+
+  .signuplink {
+    color: #cd8786;
+  }
+
+  .error_message {
+    font-size: 9px;
+  }
+
+  .errors {
+    margin-top: -1px;
+  }
+}
+
+@media (max-width: 500px) {
+  ::placeholder {
+    font-size: small;
+  }
+}

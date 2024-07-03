@@ -1,0 +1,15 @@
+.eventinfo1 {
+  width: 100vw;
+  height: 100vh;
+  color: #c4b9e2;
+  background-image: url(../img/Bg_activities.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+}
+
+.icc_event {
+  position: absolute;
+  top: 25vh;
+  left: 8vw;
+}

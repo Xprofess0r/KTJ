@@ -1,0 +1,103 @@
+#evt_card {
+  /* width: 250px; */
+  width: 45%;
+  height: 300px;
+  margin: 20px 20px;
+}
+
+#background_img {
+  width: 100%;
+  height: 300px;
+  -webkit-transition: opacity 0.5s;
+}
+
+#card_details {
+  transform: translateY(-305px);
+  opacity: 0;
+  background-color: rgba(137, 43, 226, 0.3);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.5s;
+  margin-left: 0px;
+}
+
+#evt_card:hover #background_img {
+  animation: fade1 0.5s ease-out;
+  opacity: 0.3;
+}
+
+#evt_card:hover #card_details {
+  opacity: 1;
+  background-color: rgba(128, 128, 128, 0.377);
+  animation: glow1 0.5s ease-out;
+  font-display: block;
+}
+
+#margins {
+  color: white;
+  display: block;
+  opacity: 1;
+  text-align: justify;
+  height: 80%;
+}
+
+#content_head {
+  padding-top: 1%;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#prize {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  padding-left: 3%;
+}
+
+#card_content {
+  margin-top: 15px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#firstbtn {
+  background: #c4b9e2;
+  border: 0;
+  border-radius: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 15px 15px;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 60%;
+  margin-left: 70px;
+}
+
+#twobtns {
+  top: 250px;
+  border-radius: 0;
+  height: 20%;
+}
+
+@keyframes fade1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes glow1 {
+  0% {
+    opacity: 0;
+    background-color: rgba(137, 43, 226, 0);
+  }
+  100% {
+    background-color: rgba(137, 43, 226, 0.3);
+    opacity: 1;
+  }
+}

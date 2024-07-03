@@ -1,0 +1,87 @@
+.back_button {
+  font-size: 1.55rem;
+  background: transparent;
+  color: white;
+  border: 3px solid;
+  display: flex;
+  font-family: "Exo", sans-serif;
+  border-image: conic-gradient(
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      white,
+      white,
+      white,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      white,
+      white,
+      white,
+      transparent
+    )
+    1;
+  padding: 5px 18px 6px 18px;
+  width: max-content;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  outline: none;
+  width: max-content;
+}
+
+.left_bottom {
+  bottom: 5%;
+  left: 5%;
+}
+
+.left_top {
+  top: 15%;
+  left: 5%;
+}
+
+.right_bottom {
+  bottom: 5%;
+  right: 5%;
+}
+
+.right_top {
+  top: 15%;
+  right: 5%;
+}
+
+.back_button:hover {
+  transform: translateY(-2px);
+  background-color: white;
+  color: black;
+  border-image: conic-gradient(
+      white,
+      white,
+      white,
+      white,
+      transparent,
+      transparent,
+      transparent,
+      white,
+      white,
+      white,
+      white,
+      transparent,
+      transparent,
+      transparent,
+      white
+    )
+    1;
+  transition: 0.2s ease-in-out;
+}
+.back_button:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .back_button{
+    display: none;
+  }
+}

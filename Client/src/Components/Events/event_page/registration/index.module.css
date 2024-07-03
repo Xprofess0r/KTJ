@@ -1,0 +1,234 @@
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1vh;
+}
+
+.eventregistration {
+  /* width: 100vw; */
+  height: 100vh;
+  /* margin-top: 0vh; */
+  display: flex;
+  /* background-image: url(https://i.imgur.com/M4qV3uh.png); */
+  background-color: #1b2f7e;
+  background-position: 20% 55%;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  font-family: 'Exo',sans-serif;
+}
+.regForm {
+  display: block;
+  margin-top: 22vh;
+  /* margin-left: 48vw; */
+  position: absolute;
+  right: 15%;
+  min-width: 25%;
+  height: fit-content;
+  /* width: 35vw; */
+  border-radius: 0.9em;
+  background: linear-gradient(
+    to bottom right,
+    #1b2f7e,
+    black
+  );
+  color: white;
+  padding: 2% 4%;
+}
+
+.form1 {
+  font-family: 'Exo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.registerButton {
+  font-family: 'Exo',sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 2px solid;
+  border-image: conic-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      white,
+      white,
+      white,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      white,
+      white,
+      white,
+      rgba(255, 255, 255, 0)
+    )
+    1;
+  transition: all 0.2s;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.registerButtonInner {
+  padding: 0.4rem 0.8rem;
+  color:white;
+  background: linear-gradient(
+    to bottom right,
+    #1b2f7e,
+    black
+  );
+  transition: all 0.2s;
+}
+
+.registerButton:hover {
+  background-color: white;
+}
+
+.registerButtonInner:hover {
+  background: none;
+  background-color: white;
+  color: black;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+  color: white;
+  font-family: "Exo", sans-serif;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Exo", sans-serif;
+}
+
+.regForm .addMember {
+  border: none;
+  width: 16vw;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+}
+.RegDone {
+  display: block;
+  margin-top: 22vh;
+  margin-left: 52vw;
+  padding-inline: 6vw;
+
+  height: fit-content;
+  width: fit-content;
+  border-radius: 0.9em;
+  background: linear-gradient(
+    to bottom right,
+    #3B2231,
+    #22141C
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.RegDoneh1 {
+  font-size: 3rem;
+  /* font-weight: bolder; */
+  color: white;
+  font-size: 1.7rem;
+  /* font-weight: 10; */
+  color: white;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  font-family: "Exo", sans-serif;
+}
+.RegDoneP {
+  font-size: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 5vh;
+  font-family: "Exo", sans-serif;
+}
+
+@media only screen and (max-width: 425px) {
+  .eventregistration {
+    background-image: url(https://i.imgur.com/okVdjVj.png);
+    background-size: 60% auto;
+    /* background-position-x: 1vw; */
+    /* background-position-y: 60vh; */
+    height: 93vh;
+    /* background-position-y: 36vh; */
+    background-position: 40% 110%;
+    height: 68vh;
+  }
+  .regForm {
+    margin-top: 4vh;
+    margin-left: 4vw;
+    height: fit-content;
+    position: unset;
+    width: 92vw;
+  }
+  .h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+  }
+  .h2 {
+    font-size: 0.85rem;
+    font-weight: 300;
+  }
+  .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0vh;
+  }
+  .registerButton {
+    font-size: 0.68rem;
+    height: 5vh;
+    width: fit-content;
+  }
+  .RegDone {
+    display: block;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 4vw;
+
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0.9em;
+    background: linear-gradient(
+      to bottom right,
+      #3B2231,
+      #22141C
+    );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .RegDoneh1 {
+    /* font-weight: bolder; */
+    color: white;
+    font-size: 1.3rem;
+    /* font-weight: 10; */
+    color: white;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    font-family: "Exo", sans-serif;
+  }
+  .RegDoneP {
+    font-size: 1rem;
+    margin-bottom: 5vh;
+    font-family: "Exo", sans-serif;
+  }
+}
+
+.teamsize {
+  font-size: 70%;
+}

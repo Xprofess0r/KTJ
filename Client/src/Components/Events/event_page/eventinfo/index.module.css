@@ -1,0 +1,275 @@
+.outbox {
+  background-color: #010436;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: "NeueKabel", sans-serif;
+  height: 100%;
+}
+.innerbox {
+  margin: auto;
+  width: 80%;
+  max-height: 69%;
+  display: flex;
+}
+.about::-webkit-scrollbar {
+  width: 10px;
+}
+
+.about::-webkit-scrollbar-track {
+  border-radius: 100px;
+}
+
+.about::-webkit-scrollbar-thumb {
+  border-left: 0;
+  border-right: 0;
+  background-color: white;
+}
+.leftbox {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.leftbox::-webkit-scrollbar {
+  display: none;
+}
+
+.rightbox {
+  width: 65%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  padding: 2rem;
+  color: white;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+}
+
+.imgbox {
+  width: 100%;
+  background-color: black;
+}
+.heading {
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: white;
+  border: 2px solid;
+  display: flex;
+  border-image: conic-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      white,
+      white,
+      white,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      white,
+      white,
+      white,
+      rgba(255, 255, 255, 0)
+    )
+    1;
+  width: max-content;
+  text-decoration: none;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.anchortag {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  padding: 1vw;
+  cursor: pointer;
+}
+
+.topheading {
+  width: fit-content;
+  height: 3rem;
+  background-color: white;
+  padding: 2px;
+}
+
+.subheading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.prizemoney {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.about {
+  font-size: 1.2rem;
+  overflow-y: scroll;
+}
+
+.imagetags {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sponsimages {
+  height: 100%;
+}
+
+.buttonbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anchortag:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.heading:hover {
+  color: black !important;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 0px;
+  font-weight: 700;
+  border: 2px solid white;
+}
+
+.contactus {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+  line-height: 1.2;
+  max-width: 30%;
+}
+
+.contactus i {
+  display: inline;
+}
+
+.contactitem {
+  font-size: 1rem;
+}
+
+.subcontactitem {
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  display: block;
+}
+
+.subcontactitem, .subcontactitem:hover, .subcontactitem:visited {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .outbox {
+    height: fit-content;
+    min-height: 100%;
+  }
+  .subheading {
+    font-size: 7vw;
+    font-weight: bold;
+  }
+  .prizemoney {
+    font-size: 4vw;
+  }
+
+  .description {
+    font-size: 3.6vw;
+  }
+
+  .about {
+    font-size: 3.5vw;
+  }
+  .contactus{
+    
+    position: static;
+    width: 100%;
+    margin-top: 3vh;
+    max-width: 100%;
+
+  }
+  .contactitem {
+    font-size: 3.5vw;
+  }
+
+  .subcontactitem {
+    font-size: 3.2vw;
+  }
+  .anchortag {
+    font-size: 3vw;
+  }
+
+  .innerbox {
+    flex-direction: column;
+  }
+  .leftbox {
+    width: 100%;
+    flex-direction: row;
+    padding: 1rem 0;
+    justify-content: space-evenly;
+  }
+  .rightbox {
+    width: 100%;
+    padding: 1rem;
+  }
+  .innerbox {
+    margin: 10vh 0 10vh 0;
+  }
+  
+  .anchortag {
+    color: black;
+  }
+  .heading {
+    color: black !important;
+    text-decoration: none;
+    background-color: white;
+    border-image: none;
+    border-radius: 0px;
+    font-weight: bold;
+    border: 2px solid white;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .imgbox {
+    width: 55%;
+  }
+  .buttonbox {
+    width: 30%;
+  }
+  .topheading {
+    height: 5vh;
+  }
+}
+

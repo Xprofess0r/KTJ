@@ -1,0 +1,55 @@
+.navbar {
+  display: inline-block;
+  position: absolute;
+  top: 28vh;
+  left: 2vw;
+  height: 50%;
+  z-index: 100;
+}
+.sidebarcls1,
+.sidebarcls2,
+.sidebarcls3,
+.sidebarcls4,
+.sidebarcls5,
+.sidebarcls6,
+.sidebarcls7 {
+  stroke: #c597e6;
+  stroke-miterlimit: 10;
+  cursor: pointer;
+}
+.sidebarcls1 {
+  fill: url("#sidebar-radial-gradient");
+}
+.sidebarcls2 {
+  fill: url("#sidebar-radial-gradient-2");
+}
+.sidebarcls3 {
+  fill: url("#sidebar-radial-gradient-3");
+}
+.sidebarcls4 {
+  fill: url("#sidebar-radial-gradient-4");
+}
+.sidebarcls5 {
+  fill: url("#sidebar-radial-gradient-5");
+}
+.sidebarcls6 {
+  fill: url("#sidebar-radial-gradient-6");
+}
+.sidebarcls7 {
+  fill: url("#sidebar-radial-gradient-7");
+}
+.tooltip {
+  position: relative;
+  width: max-content;
+  left: 1.5rem;
+  font-size: 0.8rem;
+  color: #c597e6;
+  line-height: 1;
+  opacity: 0;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+.tooltipcontainer {
+  height: 48.7%;
+  top: 28.7vh;
+}

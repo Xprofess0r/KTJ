@@ -1,0 +1,164 @@
+.container {
+  background-image: url("../../../images/homepage/background.png");
+  background-size: 100% 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 1;
+}
+
+.Homepage {
+  --scale: 1000%;
+  height: var(--scale);
+  width: var(--scale);
+  font-size: var(--scale);
+  top: calc(var(--top-adjust) * -9);
+  left: calc(var(--left-adjust) * -9);
+  position: relative;
+  transform-origin: var(--left-adjust) var(--top-adjust);
+  will-change: contents;
+}
+
+.normal {
+  transform: scale(0.1);
+  --left-adjust: 50.3938%;
+  --top-adjust: 27.7248%;
+}
+
+.homepagebackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-origin: center 0%;
+}
+
+.buildingsvg,
+.buildingsvg > div,
+.buildingsvg > div > svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imgcontainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.imgcontainer > img {
+  width: 100%;
+  height: 100%;
+}
+
+.starssvg {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 58%,
+    69% 58%,
+    69% 38%,
+    31% 38%,
+    27% 58%,
+    0 58%
+  );
+}
+
+.starssvg > img {
+  width: 100%;
+  height: unset;
+  opacity: 0.34;
+  transform: scale(1.2) rotate(45deg);
+  animation: rotate 20s linear infinite;
+}
+
+.starssvg > div {
+  background-image: url("../../../images/homepage/stars.png");
+  background-size: 100%;
+  opacity: 0.35;
+  background-position: center center;
+  --scaledvh: 110vh;
+  --scaledvw: 110vw;
+  height: max(var(--scaledvh), var(--scaledvw));
+  width: max(var(--scaledvh), var(--scaledvw));
+  position: relative;
+  top: min(
+    calc(60vh - calc(var(--scaledvw) / 2)),
+    calc(60vh - calc(var(--scaledvh) / 2))
+  );
+  left: min(
+    calc(50vw - calc(var(--scaledvh) / 2)),
+    calc(50vw - calc(var(--scaledvw) / 2))
+  );
+  transform: scale(1) rotate(0deg);
+  animation: rotate 36s linear infinite;
+}
+
+.clouds > div {
+  background-image: url("../../../images/homepage/clouds.png");
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  animation: cloudtranslate 36s linear infinite;
+}
+
+@keyframes cloudtranslate {
+  from {
+    background-position-x: 100vw;
+  }
+  to {
+    background-position-x: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.spacetowerlight > img {
+  opacity: 0.6;
+  animation: flicker 5s linear infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  6% {
+    opacity: 1;
+  }
+  7% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 0;
+  }
+  9% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

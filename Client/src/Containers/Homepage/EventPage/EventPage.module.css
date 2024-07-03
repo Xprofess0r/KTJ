@@ -1,0 +1,317 @@
+.container {
+  position: relative;
+}
+
+.asteroids {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+
+@keyframes updown{
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-.8rem);
+  }
+
+  100%{
+    transform: translate(0px);
+  }
+
+}
+
+
+.rocket {
+  position: absolute;
+  width: 70vw;
+  top: 10vh;
+  left: 28vw;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  animation-name:updown;
+  animation-timing-function:ease-in-out;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  transition:all;
+
+}
+
+.solar_system {
+  position: absolute;
+  width: 70vw;
+  left: 27vw;
+  top: 15vh;
+  transform-origin: 44% 42.3%;
+  animation: solar_system-spin 4s infinite linear;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+@keyframes solar_system-spin { 
+   from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+.orbit {
+  position: absolute;
+  width: 75vw;
+  top: 12vh;
+  right:0vw;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+.pos1 {
+  position: absolute;
+  left:10vw;
+  top:30vh;
+  width:20vw;
+}
+.He {
+  color:rgb(9,155,248);
+  font-family:'Ardela';
+  font-weight: 550;
+  letter-spacing: 0.3vw;
+  transition: all 3s ease-in-out 0s;;
+  animation: animate2 3s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes animate2 { 
+  50% {
+     color: #5dc2f1;
+     text-shadow: 4px -4px 10px #1772fa,
+     -4px 4px 10px #1772fa;
+  }
+}
+.De {
+  border-left: 0.3vw solid white;
+  padding-left: 0.7vw;
+}
+
+@media screen and (max-width: 900px) {
+  
+  .pos1 {
+    width: 36vw;
+    top:16vh;
+    left:5vw;
+  } 
+  .solar_system {
+    position: absolute;
+    width: 100vw;
+    left: -22vw;
+    top: 24vh;
+  }
+  
+  .orbit {
+    position: absolute;
+    width: 140vw;
+    top: 12vh;
+    right:0vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+  .rocket {
+    position: absolute;
+    width: 115vw;
+    height:60vh;
+    top: 18vh;
+    left:-20vw;
+    
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  
+  .pos1 {
+    width: 40vw;
+    top:16vh;
+    left:5vw;
+  } 
+  .solar_system {
+    position: absolute;
+    width: 100vw;
+    left: -18vw;
+    top: 26vh;
+  }
+  
+  .orbit {
+    position: absolute;
+    width: 140vw;
+    top: 20vh;
+    right:0vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+  .rocket {
+    position: absolute;
+    width: 120vw;
+    height:60vh;
+    top: 18vh;
+    left:-20vw;
+    
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+  
+  .pos1 {
+    width: 38vw;
+    top:55vh;
+    left:16vw;
+  } 
+  .solar_system {
+    width: 100vw;
+    left: -8vw;
+    top:7vh;
+  }
+  .orbit {
+    position: absolute;
+    width: 140vw;
+    top: 10vh;
+    right:0vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+  .rocket {
+    position: absolute;
+    width: 120vw;
+    height:60vh;
+    top: 18vh;
+    left:-18vw;
+    
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  
+  .pos1 {
+    width: 40vw;
+    top:55vh;
+    left:27vw;
+  } 
+  .solar_system {
+    width: 150vw;
+    left: 2vw;
+    top:2vh;
+  }
+  .orbit {
+    position: absolute;
+    width: 150vw;
+    top: 25.9vh;
+    right:-6vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+  .rocket {
+    position: absolute;
+    width: 40vw;
+    height:35vh;
+    top: 38vh;
+    left: 60vw;
+    
+  }
+}
+
+@media screen and (max-width:500px) {
+  
+  .pos1 {
+    width: 46vw;
+    top:58vh;
+    left:16vw;
+  } 
+  .solar_system {
+    width: 200vw;
+    left: -26vw;
+    top:-3vh;
+  }
+  .orbit {
+    position: absolute;
+    width: 140vw;
+    top: 24.9vh;
+    right:0vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+  .rocket {
+    position: absolute;
+    width: 40vw;
+    height:35vh;
+    top: 38vh;
+    left: 57vw;
+    
+  }
+}
+
+@media screen and (max-width:420px) {
+  
+  .pos1 {
+    width: 48vw;
+    top:58vh;
+    left:10vw;
+  } 
+  .solar_system {
+    width: 200vw;
+    left: -35vw;
+    top:0vh;
+  }
+  .orbit {
+    position: absolute;
+    width: 150vw;
+    top: 21vh;
+    right:0vw;
+  }
+  .asteroids{
+    display: none;
+  }
+
+  .rocket {
+    position: absolute;
+    width: 40vw;
+    height:35vh;
+    top: 35vh;
+    left: 50vw;
+    
+  }
+}

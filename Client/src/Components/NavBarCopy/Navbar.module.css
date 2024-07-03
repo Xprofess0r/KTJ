@@ -1,0 +1,99 @@
+.Navbar {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: #160f5d; */
+  /* background-image: linear-gradient(#2a236a 0%, #2a236a 80%, #160f5d 50%); */
+  right: 0;
+  z-index: 100;
+  /* padding-bottom: 3rem; */
+}
+.Navbar img {
+  margin-left: 1.5rem;
+}
+ul div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavbarList {
+  text-align: center;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-self: center;
+  display: flex;
+  /* transform: translateY(-25%); */
+  flex-wrap: wrap;
+  width: 80%;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.NavbarList > li {
+  display: inline-block;
+  padding: 1rem 0rem;
+  color: #c4b9e2;
+  font-size: 1rem;
+  backface-visibility: hidden;
+}
+
+.Navbar:not(.active):not(.SignInBtn) ul li a:hover,
+.Navbar .active {
+  border-bottom: 1px solid #c4b9e2;
+}
+.Navbar .active button,
+.Navbar button:hover {
+  background-color: #c4b9e2;
+  color: white;
+}
+ul div {
+  list-style: none;
+}
+
+ul li button {
+  border: 1px solid #c4b9e2;
+  color: #c4b9e2;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 0.2rem 0.8rem;
+}
+.SignInBtn {
+  border-radius: 8px 0px 0px 8px;
+  border-right: none;
+}
+.SignUpBtn {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.SideDrawerBtn {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .Navbar {
+    justify-content: flex-start;
+  }
+  .NavbarList {
+    display: none;
+  }
+
+  .SideDrawerBtn {
+    display: block;
+  }
+  .Hide {
+    display: none;
+  }
+  .Show {
+    display: block;
+  }
+}

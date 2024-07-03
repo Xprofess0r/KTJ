@@ -1,0 +1,351 @@
+.container {
+  background-image: url("https://i.postimg.cc/KzrFMMDJ/background.png");
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* z-index: 10; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerk {
+  background-image: url("https://i.postimg.cc/KzrFMMDJ/background.png");
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backBtn {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  text-shadow: 0 0 1rem #0dd;
+  color: #0dd;
+  animation: swing 1s infinite alternate ease-in-out;
+  cursor: pointer;
+  font-family: Audiowide;
+}
+
+.backBtn span:nth-child(1) {
+  font-size: 2rem;
+}
+
+.backBtn span:nth-child(2) {
+  font-size: 1rem;
+  position: absolute;
+  top: 0.8rem;
+}
+
+@keyframes swing {
+  from {
+    transform: translateX(0rem);
+  }
+
+  to {
+    transform: translateX(0.5rem);
+  }
+}
+
+.container0 {
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 4rem;
+}
+@media screen and (max-width:1320px) {
+  .container0 {
+    margin-top: 0rem;
+  }
+}
+.container1 {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 65vh;
+  width: 70vw;
+  padding-bottom: 1rem;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.21);
+  ;
+  align-self: center;
+  color: rgb(223, 218, 218);
+  font-family: 'Ardela';
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+}
+
+
+.scrollDiv {
+  max-height: 16rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container1::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container1::-webkit-scrollbar-track {
+  box-shadow: none;
+  -webkit-box-shadow: auto;
+  -webkit-border-radius: auto;
+  border-radius: 10px;
+}
+
+.container1::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+
+.scrollDiv::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollDiv::-webkit-scrollbar-track {
+  box-shadow: none;
+  -webkit-box-shadow: auto;
+  -webkit-border-radius: auto;
+  border-radius: 10px;
+}
+
+.scrollDiv::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+
+
+.headerA {
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  padding-top: 3rem;
+  /* padding-bottom: 10vh; */
+}
+
+.headerB {
+  font-size: small;
+  text-align: center;
+  position: relative;
+  padding: 1vh;
+  padding-top: 2vh;
+  color: red;
+}
+
+.headerC {
+  font-size: medium;
+  text-align: center;
+  position: relative;
+  padding: 1vh;
+  padding-top: 1vh;
+  color: white;
+}
+
+.matter {
+  padding: 3rem 4rem;
+
+}
+
+.labelA {
+  position: relative;
+
+  font-size: 2rem;
+  padding-right: 5vh;
+}
+
+.inputA {
+  position: relative;
+  padding: 1vh;
+  border-color: white;
+  border-radius: 10px;
+  background: transparent;
+  width: 30vw;
+  height: max-content;
+  color: white;
+  font-size: 1rem;
+}
+
+.inputSA {
+  position: relative;
+  font-size: 1rem;
+  padding-left: 0.5vh;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+.middleA {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5vh;
+  align-items: center;
+  left: 7vw;
+  margin-top: 2rem;
+}
+
+.buttonA1 {
+  background: transparent;
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  font-family: 'Ardela';
+  width: max-content;
+  display: inline;
+  font-size: 1.2rem;
+  left: 12.5vw;
+  position: relative;
+  padding: 0.5vh 1vw;
+  cursor: pointer;
+}
+
+.Mob {
+  display: flex;
+}
+
+.plus {
+  display: inline;
+  position: relative;
+  right: 0vw;
+  font-weight: bolder;
+}
+
+.buttonA2 {
+  background: transparent;
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  font-family: 'Ardela';
+  width: max-content;
+  margin-top: 7vh;
+  margin-bottom: 3vh;
+  position: relative;
+  align-self: center;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 0.5vh 1.5vw;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.buttonA2:hover {
+  background: white;
+  color: #19514E;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width:1000px) {
+  .container1 {
+    width: 85vw;
+    left: 8vw;
+  }
+
+  .middleA {
+    flex-direction: row;
+  }
+
+  .headerA {
+    font-size: 1.5rem;
+  }
+
+  .labelA {
+    font-size: 1.5rem;
+  }
+
+  .buttonA1 {
+    left: 20vw;
+    font-size: 1rem;
+  }
+
+  .buttonA2 {
+
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .container1 {
+    top: 20vh;
+    left: 0vw;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
+
+  .backBtn {
+    position: absolute;
+    top: 0rem;
+    left: 0.5rem;
+  }
+
+  .scrollDiv {
+    height: 15rem;
+  }
+
+  .Mob {
+    display: contents;
+
+  }
+
+  .middleA {
+    flex-direction: column;
+    width: 90vw;
+
+  }
+
+  .headerA {
+    font-size: 1.5rem;
+  }
+
+  .labelA {
+    font-size: 1rem;
+    padding-bottom: 3vh;
+
+  }
+
+  .inputA {
+    font-size: 0.5rem;
+    width: 80vw;
+    margin-right: 1rem;
+  }
+
+  .inputSA {
+    font-size: 0.8rem;
+    padding-left: 8vw;
+    align-self: flex-start;
+  }
+
+  .buttonA1 {
+    font-size: 0.9rem;
+    left: 10vw;
+  }
+
+  .buttonA2 {
+    font-size: 0.9rem;
+  }
+}

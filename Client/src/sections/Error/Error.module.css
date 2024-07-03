@@ -1,0 +1,122 @@
+@font-face {
+  font-family: glitchgoblin;
+  src: url(../../fonts/GlitchGoblin-2O87v.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.errorouterdiv {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  background: auto;
+  background-position: center;
+  top: 0;
+  left: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-image: url('https://i.postimg.cc/pL2wGhq6/bkgpng-1.png');
+}
+
+.overlayerror {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  background: auto;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-size: cover;
+}
+
+.containererror {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  flex-direction: column;
+  margin-left: -3vw;
+}
+
+.errortext{
+  color: white;
+  font-size: 9vw;
+  font-family: glitchgoblin;
+}
+
+.errorfourofour{
+  color: white;
+  font-size: 15vw;
+  font-family: glitchgoblin;
+  margin-top: 0;
+  margin-left: -2vw;
+}
+
+.errorclock{
+  width: 11vw;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .errortext{
+    font-size: 11vw;
+  }
+  .errorfourofour {
+    font-size: 19vw;
+  }
+  .errorclock {
+    width: 14vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .errortext{
+    font-size: 16vw;
+  }
+  .errorfourofour {
+    font-size: 25vw;
+  }
+  .errorclock {
+    width: 19vw;
+    margin-left: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 350px) {
+  .errortext{
+    font-size: 18vw;
+  }
+  .errorfourofour {
+    font-size: 28vw;
+  }
+  .errorclock {
+    width: 21vw;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .errortext{
+    font-size: 18vw;
+  }
+  .errorfourofour {
+    font-size: 27vw;
+  }
+  .errorclock {
+    width: 19vw;
+    margin-left: 5px;
+  }
+}

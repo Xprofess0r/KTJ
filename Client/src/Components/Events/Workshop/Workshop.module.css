@@ -1,0 +1,65 @@
+.workshopPage{
+    position: relative;
+    overflow-y: scroll;
+    font-family: 'Ardela';
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,#185346,black);
+}
+.headings{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+.workshopHeading{
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 550;
+    text-decoration: underline;
+    color: #ABFBBA;
+    /* position:absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+/* .workshopSubHeading{
+    font-weight: 400;
+    color: #ABFBBA;
+    /* position:absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%); 
+} */
+.contests{
+    overflow-y: scroll;
+    gap: 10rem;
+    padding:40vh  5vw 0;
+    margin-top: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 650px){
+    .workshopHeading{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .workshopHeading{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .workshopHeading{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+.Table {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  border: 1px solid #f5f4f4;
+  border-radius: 20px;
+  overflow: scroll;
+  /* height: 90vh; */
+  margin-top: 0.5rem;
+}
+.scroll{
+  height: 90vh;
+  overflow-y: scroll;
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+.container{
+  /* height: 40vh; */
+  /* overflow: scroll; */
+}
+div.ant-table-wrapper{
+  padding: 0px !important;
+  /* overflow: scroll; */
+}
+th{
+  font-weight: bold;
+  color : #2f2f2f;
+  border: none !important;
+  border-bottom: 2px solid rgb(67, 148, 121) !important;
+  background-color: aquamarine !important;
+  
+}
+tr:has(th){
+  border: 2px solid rgb(67, 148, 121) !important;
+}
